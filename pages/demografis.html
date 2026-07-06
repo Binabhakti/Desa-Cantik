@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Demografis Desa | Desa Bina Bhakti</title>
+
+
+<link rel="stylesheet"
+href="../assets/page.css">
+
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+</head>
+
+
+<body>
+
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+
+<header class="page-header">
+
+
+<div class="container">
+
+
+<a href="../index.html"
+class="logo">
+
+<img src="../img/logo.gif">
+
+
+<div>
+
+<h2>Desa Cantik</h2>
+
+<span>Desa Bina Bhakti</span>
+
+</div>
+
+
+</a>
+
+
+
+<a href="../index.html"
+class="back-home">
+
+<i class="fas fa-arrow-left"></i>
+
+Kembali
+
+</a>
+
+
+</div>
+
+
+</header>
+
+
+
+
+
+
+
+
+<!-- =====================================================
+     BANNER
+===================================================== -->
+
+
+<section class="page-banner">
+
+
+<img src="../img/demografis.webp">
+
+
+<div class="banner-overlay"></div>
+
+
+<div class="banner-content">
+
+</span>
+
+
+<h1>
+
+DEMOGRAFIS DESA
+
+</h1>
+
+
+<p>
+
+Data Kependudukan dan Sumber Daya Manusia
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================================
+     AUDIO
+===================================================== -->
+
+
+<section class="audio-section">
+
+
+<div class="container">
+
+
+<h2>
+
+<i class="fas fa-headphones"></i>
+
+Dengarkan Narasi Demografis
+
+</h2>
+
+
+
+<audio controls>
+
+<source src="../audio/demografis.mp3"
+type="audio/mpeg">
+
+</audio>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- =====================================================
+     STATISTIK PENDUDUK
+===================================================== -->
+
+
+<section class="stat-penduduk">
+
+
+<div class="container">
+
+
+<h2>
+
+Statistik Penduduk
+
+</h2>
+
+
+
+<div class="stat-grid">
+
+
+
+
+<div class="stat-card">
+
+<i class="fas fa-users"></i>
+
+<h3 class="counter"
+data-target="1364">0</h3>
+
+<p>Jumlah Penduduk</p>
+
+</div>
+
+
+
+
+
+<div class="stat-card">
+
+<i class="fas fa-male"></i>
+
+<h3 class="counter"
+data-target="738">0</h3>
+
+<p>Laki-Laki</p>
+
+</div>
+
+
+
+
+
+<div class="stat-card">
+
+<i class="fas fa-female"></i>
+
+<h3 class="counter"
+data-target="626">0</h3>
+
+<p>Perempuan</p>
+
+</div>
+
+
+
+
+
+<div class="stat-card">
+
+<i class="fas fa-house"></i>
+
+<h3 class="counter"
+data-target="437">0</h3>
+
+<p>Kepala Keluarga</p>
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+<!-- GRAFIK PENDUDUK -->
+
+
+<div class="chart-box besar">
+
+
+<h3>
+
+Grafik Statistik Penduduk
+
+</h3>
+
+
+<canvas id="pendudukChart"></canvas>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- =====================================================
+     INFOGRAFIS DETAIL
+===================================================== -->
+
+
+<section class="infografis">
+
+
+<div class="container">
+
+
+
+<h2>
+
+Infografis Demografis
+
+</h2>
+
+
+
+
+
+<div class="chart-grid">
+
+
+
+
+
+
+
+<!-- KOMPOSISI PENDUDUK -->
+
+
+<div class="chart-box">
+
+
+<h3>
+
+Komposisi Penduduk
+
+</h3>
+
+
+
+<div class="info-mini">
+
+
+<div>
+
+<b>738</b>
+
+<span>Laki-Laki</span>
+
+</div>
+
+
+
+<div>
+
+<b>626</b>
+
+<span>Perempuan</span>
+
+</div>
+
+
+</div>
+
+
+
+
+<canvas id="genderChart"></canvas>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- KEPALA KELUARGA -->
+
+
+<div class="chart-box">
+
+
+<h3>
+
+Kepala Keluarga
+
+</h3>
+
+
+
+
+<div class="info-mini">
+
+
+<div>
+
+<b>408</b>
+
+<span>KK Laki-Laki</span>
+
+</div>
+
+
+
+<div>
+
+<b>29</b>
+
+<span>KK Perempuan</span>
+
+</div>
+
+
+
+</div>
+
+
+
+
+<canvas id="kkChart"></canvas>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- PENDIDIKAN -->
+
+
+<div class="chart-box besar">
+
+
+<h3>
+
+Pendidikan Masyarakat
+
+</h3>
+
+
+
+
+<div class="info-mini empat">
+
+
+<div>
+
+<b>586</b>
+
+<span>SD</span>
+
+</div>
+
+
+<div>
+
+<b>243</b>
+
+<span>SLTP</span>
+
+</div>
+
+
+<div>
+
+<b>331</b>
+
+<span>SLTA</span>
+
+</div>
+
+
+<div>
+
+<b>67</b>
+
+<span>Perguruan Tinggi</span>
+
+</div>
+
+
+
+</div>
+
+
+
+
+<canvas id="pendidikanChart"></canvas>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- PENDIDIKAN ANAK -->
+
+
+<div class="chart-box besar">
+
+
+<h3>
+
+Data Pendidikan Anak
+
+</h3>
+
+
+
+
+<div class="info-mini empat">
+
+
+<div>
+
+<b>7</b>
+
+<span>Guru PAUD</span>
+
+</div>
+
+
+
+<div>
+
+<b>41</b>
+
+<span>Siswa PAUD</span>
+
+</div>
+
+
+
+
+<div>
+
+<b>9</b>
+
+<span>Guru SD</span>
+
+</div>
+
+
+
+<div>
+
+<b>95</b>
+
+<span>Siswa SD</span>
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<canvas id="sekolahChart"></canvas>
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================================
+     NAVIGASI
+===================================================== -->
+
+
+<section class="page-navigation">
+
+
+<div class="container">
+
+
+<a href="geografis.html"
+class="nav-button">
+
+<i class="fas fa-arrow-left"></i>
+
+Geografis
+
+</a>
+
+
+
+
+<a href="pemerintahan.html"
+class="nav-button">
+
+Pemerintahan Desa
+
+<i class="fas fa-arrow-right"></i>
+
+</a>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+
+<footer class="footer">
+
+
+<h3>
+
+DESA CANTIK DESA BINA BHAKTI
+
+</h3>
+
+
+
+<p>
+
+Kecamatan Sematu Jaya • Kabupaten Lamandau
+
+</p>
+
+
+
+<div class="footer-line"></div>
+
+
+
+<small>
+
+Design by
+
+<strong>
+
+Saiful Rully (Mahaprana Print)
+
+</strong>
+
+</small>
+
+
+
+</footer>
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="../assets/page.js"></script>
+
+
+
+</body>
+
+</html>

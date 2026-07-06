@@ -1,0 +1,1530 @@
+/* ==========================================================
+   DESA CANTIK FRAMEWORK
+   STYLE.CSS
+========================================================== */
+
+
+/* ==========================================================
+   IMPORT FONT
+========================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Nunito:wght@300;400;500;600;700;800&display=swap');
+
+
+/* ==========================================================
+   ROOT
+========================================================== */
+
+:root{
+
+    --primary:#2E7D32;
+    --primary-dark:#1B5E20;
+    --primary-light:#66BB6A;
+
+    --white:#FFFFFF;
+    --black:#222222;
+
+    --bg:#F7F8FA;
+
+    --text:#37474F;
+    --text-light:#78909C;
+
+    --border:#E5E7EB;
+
+    --shadow:0 8px 25px rgba(0,0,0,.08);
+
+    --radius:18px;
+
+    --transition:.3s;
+
+    --container:1200px;
+
+}
+
+
+/* ==========================================================
+   RESET
+========================================================== */
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:'Nunito',sans-serif;
+
+    font-size:16px;
+
+    color:var(--text);
+
+    background:var(--bg);
+
+    overflow-x:hidden;
+
+    line-height:1.7;
+
+}
+
+
+/* ==========================================================
+   CONTAINER
+========================================================== */
+
+.container{
+
+    width:100%;
+
+    max-width:var(--container);
+
+    margin:auto;
+
+    padding:0 20px;
+
+}
+
+
+/* ==========================================================
+   IMAGE
+========================================================== */
+
+img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+
+/* ==========================================================
+   LINK
+========================================================== */
+
+a{
+
+    color:inherit;
+
+    text-decoration:none;
+
+}
+
+
+/* ==========================================================
+   BUTTON
+========================================================== */
+
+button{
+
+    border:none;
+
+    outline:none;
+
+    cursor:pointer;
+
+    font-family:inherit;
+
+}
+
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+#header{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:80px;
+
+    background:rgba(255,255,255,.95);
+
+    backdrop-filter:blur(15px);
+
+    box-shadow:0 2px 15px rgba(0,0,0,.05);
+
+    z-index:999;
+
+}
+
+.navbar{
+
+    height:80px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+/* ==========================================================
+   LOGO
+========================================================== */
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.logo img{
+
+    width:80px;
+
+    height:70px;
+
+    object-fit:contain;
+
+}
+
+.logo h2{
+
+    font-size:20px;
+
+    line-height:1;
+
+}
+
+.logo span{
+
+    font-size:13px;
+
+    color:var(--text-light);
+
+}
+
+/* ==========================================================
+   MENU
+========================================================== */
+
+.menu{
+
+    display:flex;
+
+    gap:35px;
+
+}
+
+.menu a{
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.menu a:hover{
+
+    color:var(--primary);
+
+}
+
+/* ==========================================================
+   MENU BUTTON
+========================================================== */
+
+#menuButton{
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:12px;
+
+    background:var(--primary);
+
+    color:#fff;
+
+    font-size:22px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media(max-width:992px){
+
+    .menu{
+
+        display:none;
+
+    }
+
+}
+
+
+/* ==========================================================
+   SIDEBAR
+========================================================== */
+
+#sidebar{
+
+    position:fixed;
+
+    top:0;
+
+    left:-300px;
+
+    width:280px;
+
+    height:100vh;
+
+    background:#FFFFFF;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+    transition:.35s;
+
+    z-index:2000;
+
+    overflow-y:auto;
+
+}
+
+#sidebar.active{
+
+    left:0;
+
+}
+
+
+/* HEADER */
+
+.sidebar-header{
+
+    padding:35px 25px;
+
+    text-align:center;
+
+    border-bottom:1px solid #EEEEEE;
+
+}
+
+.sidebar-header img{
+
+    width:80px;
+
+    margin:auto;
+
+    margin-bottom:15px;
+
+}
+
+.sidebar-header h2{
+
+    font-size:22px;
+
+}
+
+.sidebar-header p{
+
+    color:var(--text-light);
+
+}
+
+
+/* MENU */
+
+.sidebar-menu{
+
+    display:flex;
+
+    flex-direction:column;
+
+    padding:15px;
+
+}
+
+.sidebar-menu a{
+
+    padding:15px 18px;
+
+    margin-bottom:8px;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+    font-weight:600;
+
+}
+
+.sidebar-menu a:hover{
+
+    background:var(--primary);
+
+    color:#FFFFFF;
+
+}
+
+
+/* ==========================================================
+   CONTENT
+========================================================== */
+
+#content{
+
+    min-height:100vh;
+
+    margin-top:80px;
+
+}
+
+
+/* ==========================================================
+   SECTION
+========================================================== */
+
+section{
+
+    padding:80px 0;
+
+}
+
+
+/* ==========================================================
+   TITLE
+========================================================== */
+
+h1,h2,h3,h4{
+
+    font-family:'Poppins',sans-serif;
+
+    color:var(--black);
+
+}
+
+
+/* ==========================================================
+   CARD
+========================================================== */
+
+.card{
+
+    background:#fff;
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+
+    padding:30px;
+
+}
+
+
+/* ==========================================================
+   BUTTON
+========================================================== */
+
+.btn{
+
+    display:inline-block;
+
+    padding:14px 28px;
+
+    background:var(--primary);
+
+    color:#fff;
+
+    border-radius:50px;
+
+    transition:var(--transition);
+
+}
+
+.btn:hover{
+
+    background:var(--primary-dark);
+
+}
+
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+#footer{
+
+    background:#fff;
+
+    padding:60px 0;
+
+}
+
+
+/* ==========================================================
+   AUDIO
+========================================================== */
+
+#audioPlayer{
+
+    position:fixed;
+
+    bottom:20px;
+
+    left:20px;
+
+    z-index:900;
+
+}
+
+
+/* ==========================================================
+   MODAL VIDEO
+========================================================== */
+
+#modal{
+
+    position:fixed;
+
+    inset:0;
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(0,0,0,.85);
+
+    z-index:9999;
+
+}
+
+.modal-content{
+
+    width:90%;
+
+    max-width:900px;
+
+    position:relative;
+
+}
+
+.modal-content video{
+
+    width:100%;
+
+    border-radius:15px;
+
+    display:block;
+
+}
+
+.close-modal{
+
+    position:absolute;
+
+    top:15px;
+
+    right:15px;
+
+    width:50px;
+
+    height:50px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:rgba(0,0,0,.65);
+
+    color:#FFFFFF;
+
+    font-size:24px;
+
+    cursor:pointer;
+
+    z-index:10000;
+
+    transition:.3s;
+
+}
+
+.close-modal:hover{
+
+    background:#E53935;
+
+    transform:rotate(90deg);
+
+}
+
+/* ==========================================================
+   LOADING
+========================================================== */
+
+#loading{
+
+    position:fixed;
+
+    inset:0;
+
+    background:#fff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:99999;
+
+}
+
+
+/* ==========================================================
+   BACK TO TOP
+========================================================== */
+
+#backToTop{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:50px;
+
+    height:50px;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    color:#fff;
+
+    display:none;
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:992px){
+
+    .container{
+
+        padding:0 16px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    section{
+
+        padding:60px 0;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    body{
+
+        font-size:15px;
+
+    }
+
+}
+
+
+
+/* ==========================================================
+   HERO
+========================================================== */
+
+.hero{
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+    overflow:hidden;
+
+    padding:100px 0 80px;
+
+}
+
+.hero-video{
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:80%;
+
+    object-fit:cover;
+
+}
+
+.hero-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+}
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:900px;
+
+    color:#fff;
+
+}
+
+.hero-tag{
+
+    display:inline-block;
+
+    padding:10px 22px;
+
+    border-radius:50px;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(8px);
+
+    margin-bottom:10px;
+
+}
+
+.hero h1{
+
+    font-size:64px;
+
+    margin-bottom:5px;
+
+    line-height:1.1;
+
+    color:#fff;
+
+}
+
+.hero h3{
+
+    font-size:24px;
+
+    font-weight:600;
+
+    margin-bottom:18px;
+
+    color:#8BC34A;
+
+    text-shadow:0 2px 8px rgba(0,0,0,.5);
+
+}
+
+.hero p{
+
+    max-width:700px;
+
+    line-height:1.7;
+
+    margin-bottom:28px;
+
+}
+
+/* ==========================================================
+   HERO BUTTON
+========================================================== */
+
+.hero-button{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    flex-wrap:nowrap;
+
+    margin-top:35px;
+
+}
+
+
+.hero-button .btn{
+
+    padding:14px 22px;
+
+    font-size:14px;
+
+    white-space:nowrap;
+
+}
+
+
+.hero .container{
+
+    position:relative;
+
+}
+
+.hero-kades{
+
+    position:absolute;
+
+    right:-400px;
+
+    bottom:-30px;
+
+    width:270px;
+
+    z-index:5;
+
+}
+
+
+.hero-kades{
+
+    position:absolute;
+
+    right:-300px;
+
+    bottom:-30px;
+
+    width:290px;
+
+    z-index:5;
+
+}
+/* ==========================================================
+   HERO LOGO
+========================================================== */
+
+.hero-logo{
+
+    width:130px;
+
+    height:130px;
+
+    margin:0 auto 25px;
+
+}
+
+.hero-logo img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:contain;
+
+    display:block;
+
+    filter:drop-shadow(0 8px 20px rgba(0,0,0,.35));
+
+}
+
+/* ==========================================================
+   HERO MUSIC
+========================================================== */
+
+.hero-music{
+
+    margin-top:25px;
+
+}
+
+
+.hero-music button{
+
+    border:none;
+
+    padding:14px 28px;
+
+    border-radius:40px;
+
+    background:rgba(14, 255, 54, 0.18);
+
+    backdrop-filter:rgba(14, 255, 54, 0.18);
+
+    color:#226d00;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+.hero-music button:hover{
+
+    background:#00ff6a;
+
+    color:#2E7D32;
+
+    transform:translateY(-3px);
+
+}
+
+/* ==========================================================
+   BUTTON CERITA DESA
+========================================================== */
+
+
+.btn-cerita{
+
+    background:#1565C0 !important;
+
+    color:#FFFFFF !important;
+
+}
+
+
+.btn-cerita:hover{
+
+    background:#FFFFFF !important;
+
+    color:#1565C0 !important;
+
+}
+
+/* ==========================================================
+   FAKTA SINGKAT
+========================================================== */
+
+#statistik{
+
+    padding:70px 0;
+
+    background:#d3d3d3;
+
+}
+
+.fakta-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(8,1fr);
+
+    gap:15px;
+
+}
+
+.fakta-card{
+
+    background:#FFFFFF;
+
+    border-radius:15px;
+
+    padding:20px 10px;
+
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.05);
+
+    transition:.3s;
+
+}
+
+.fakta-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.fakta-card .icon{
+
+    font-size:28px;
+
+    margin-bottom:8px;
+
+}
+
+.fakta-card h3{
+
+    font-size:28px;
+
+    color:#2E7D32;
+
+    margin-bottom:5px;
+
+}
+
+.fakta-card span{
+
+    display:block;
+
+    font-size:13px;
+
+    line-height:1.4;
+
+}
+
+@media(max-width:800px){
+
+    .fakta-grid{
+
+        grid-template-columns:repeat(4,1fr);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .fakta-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+/* ==========================================================
+   JELAJAHI DESA
+========================================================== */
+
+#jelajah{
+
+    padding: 50px 0;
+
+    background:#fff;
+
+}
+
+.jelajah-wrapper{
+
+    position:relative;
+
+}
+
+.jelajah-slider{
+
+    display:flex;
+
+    gap:20px;
+
+    overflow-x:auto;
+
+    scroll-behavior:smooth;
+
+    scrollbar-width:none;
+
+    padding:10px 5px;
+
+}
+
+.jelajah-slider::-webkit-scrollbar{
+
+    display:none;
+
+}
+
+.jelajah-card{
+
+    flex:0 0 240px;
+
+    height:160px;
+
+    position:relative;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.jelajah-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.card-image{
+
+    position:absolute;
+
+    inset:0;
+
+    background:#d9e5d9;
+
+}
+
+.card-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.65));
+
+}
+
+.card-content{
+
+    position:absolute;
+
+    left:18px;
+
+    right:18px;
+
+    bottom:18px;
+
+    z-index:2;
+
+    color:#fff;
+
+}
+
+.card-content span{
+
+    font-size:14px;
+
+}
+
+.card-content h3{
+
+    color:#fff;
+
+    font-size:18px;
+
+    margin-top:5px;
+
+    line-height:1.3;
+
+}
+
+.slider-btn{
+
+    position:absolute;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    background:#2E7D32;
+
+    color:#fff;
+
+    font-size:22px;
+
+    z-index:20;
+
+    cursor:pointer;
+
+}
+
+.prev{
+
+    left:-20px;
+
+}
+
+.next{
+
+    right:-20px;
+
+}
+
+@media(max-width:768px){
+
+    .slider-btn{
+
+        display:none;
+
+    }
+
+}
+
+/* ==========================================================
+   FOTO CARD JELAJAH
+========================================================== */
+
+
+/* 01 SELAYANG PANDANG */
+
+.profil-img{
+
+    background-image:url("../img/kantor-desa.webp");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+
+
+/* 02 GEOGRAFIS */
+
+.geografis-img{
+
+    background-image:url("../img/geografis.webp");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+/* 03 DEMOGRAFIS */
+
+.demografis-img{
+
+    background-image:url("../img/demografis-banner.webp");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+/* 04 PEMERINTAHAN */
+
+.pemerintahan-img{
+
+    background-image:url("../img/pemerintahan.webp");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+/* 05 SOSIAL */
+
+.masyarakat-img{
+
+    background-image:url("../img/masyarakat.webp");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+/* 06 ekonomi */
+
+.ekonomi-img{
+
+    background-image:url("../img/perekonomian.webp");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+/* 07 sarana */
+
+.sarana-img{
+
+    background-image:url("../img/sarana.webp");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+/* 07 Potensi */
+
+.potensi-img{
+
+    background-image:url("../img/potensi.webp");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+/* 08 pembangunan */
+
+.pembangunan-img{
+
+    background-image:url("../img/pembangunan.webp");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+/* 09 desa cantik */
+
+.desa-cantik-img{
+
+    background-image:url("../img/desa-cantik.webp");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+/* 10 prestasi */
+
+.prestasi-img{
+
+    background-image:url("../img/juara.webp");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+/* 11 penutup */
+
+.penutup-img{
+
+    background-image:url("../img/penutup.webp");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+/*====================================================
+    VIDEO & EBOOK
+====================================================*/
+
+#ebook{
+
+    padding: 20px 0;
+
+    background:#d3d3d3;
+
+}
+
+.ebook-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 420px;
+
+    gap:20px;
+
+    align-items:start;
+
+}
+
+.video-box h2,
+.pdf-box h2{
+
+    color:#2E7D32;
+
+    font-size:20px;
+
+    margin-bottom:0px;
+
+}
+
+.video-box h1,
+.pdf-box h1{
+
+    font-size:42px;
+
+    margin-bottom:25px;
+
+}
+
+.video-preview{
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+
+}
+
+.video-preview video{
+
+    width:100%;
+
+    display:block;
+
+}
+
+.pdf-box{
+
+    text-align:center;
+
+}
+
+.pdf-cover{
+
+    width:260px;
+
+    margin:auto;
+
+    display:block;
+
+    margin-bottom:25px;
+
+}
+
+.pdf-box p{
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+
+    color:#555;
+
+}
+
+.ebook-button{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+@media(max-width:992px){
+
+    .ebook-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .video-box{
+
+        margin-bottom:50px;
+
+    }
+
+    .pdf-cover{
+
+        width:220px;
+
+    }
+
+}
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+.footer{
+
+    background:#1F4E24;
+
+    color:#FFFFFF;
+
+    text-align:center;
+
+    padding:20px 20px;
+
+}
+
+.footer h3{
+
+    color:#FFFFFF !important;
+
+    font-size:20px;
+
+    margin:0 0 5px;
+
+}
+
+.footer p{
+
+    color:#D8EAD8;
+
+    margin:0;
+
+    font-size:15px;
+
+}
+
+.footer-line{
+
+    width:70px;
+
+    height:2px;
+
+    background:#7BC043;
+
+    margin:8px auto;
+
+    border-radius:20px;
+
+}
+
+.footer small{
+
+    display:block;
+
+    color:#D8EAD8;
+
+    font-size:13px;
+
+    line-height:1.6;
+
+}
+
+.footer strong{
+
+    color:#FFFFFF;
+
+}

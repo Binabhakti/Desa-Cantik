@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Statistik Desa Bina Bhakti</title>
+
+
+<link rel="stylesheet" href="../assets/page.css">
+
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+</head>
+
+
+<body>
+
+
+
+
+<!-- ================= HEADER ================= -->
+
+
+<header class="page-header">
+
+<div class="container">
+
+
+<a href="../index.html" class="logo">
+
+<img src="../img/logo.gif">
+
+
+<div>
+
+<h2>Desa Cantik</h2>
+
+<span>Desa Bina Bhakti</span>
+
+</div>
+
+
+</a>
+
+
+
+
+<a href="../index.html" class="back-home">
+
+<i class="fas fa-arrow-left"></i>
+
+Kembali
+
+</a>
+
+
+</div>
+
+</header>
+
+
+
+
+
+
+
+
+<!-- ================= HERO ================= -->
+
+
+<section class="statistik-hero">
+
+
+<div class="container">
+
+
+<span>BAB X</span>
+
+
+<h1>
+
+Statistik Desa Bina Bhakti
+
+</h1>
+
+
+<p>
+
+Data menjadi dasar dalam memahami kondisi desa,
+melihat perkembangan masyarakat,
+serta mendukung pembangunan yang lebih tepat sasaran
+melalui program Desa Cantik.
+
+</p>
+
+
+
+
+<div class="audio-box">
+
+
+<button id="audioBtn">
+
+<i class="fas fa-play"></i>
+
+Dengarkan Narasi
+
+</button>
+
+
+
+<audio id="narasiAudio">
+
+
+<source 
+src="../audio/statistik-desa.wav"
+type="audio/mpeg">
+
+
+</audio>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<!-- ================= COUNTER ================= -->
+
+
+<section class="statistik-counter">
+
+
+<div class="container">
+
+
+<div class="statistik-counter-grid">
+
+
+
+
+
+<div class="statistik-box">
+
+<i class="fas fa-users"></i>
+
+<h2 class="counter" data-target="1364">
+0
+</h2>
+
+<p>Penduduk</p>
+
+</div>
+
+
+
+
+
+
+<div class="statistik-box">
+
+<i class="fas fa-house-user"></i>
+
+<h2 class="counter" data-target="437">
+0
+</h2>
+
+<p>Kepala Keluarga</p>
+
+</div>
+
+
+
+
+
+
+<div class="statistik-box">
+
+<i class="fas fa-chart-line"></i>
+
+<h2 class="counter" data-target="86">
+0
+</h2>
+
+<p>% Realisasi PBB</p>
+
+</div>
+
+
+
+
+
+
+
+<div class="statistik-box">
+
+<i class="fas fa-drumstick-bite"></i>
+
+<h2 class="counter" data-target="6000">
+0
+</h2>
+
+<p>Ayam Broiler</p>
+
+</div>
+
+
+
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<!-- ================= DASHBOARD GRAFIK ================= -->
+
+
+<section class="statistik-chart">
+
+
+<div class="container">
+
+
+<div class="statistik-grid">
+
+
+
+
+
+
+
+<!-- Penduduk -->
+
+
+<div class="statistik-card">
+
+
+<h3>
+
+<i class="fas fa-users"></i>
+
+Kependudukan
+
+</h3>
+
+
+<canvas id="chartPenduduk"></canvas>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- Pendidikan -->
+
+
+<div class="statistik-card">
+
+
+<h3>
+
+<i class="fas fa-graduation-cap"></i>
+
+Pendidikan
+
+</h3>
+
+
+<canvas id="chartPendidikan"></canvas>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- Pekerjaan -->
+
+
+<div class="statistik-card">
+
+
+<h3>
+
+<i class="fas fa-briefcase"></i>
+
+Mata Pencaharian
+
+</h3>
+
+
+<canvas id="chartPekerjaan"></canvas>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- Kesejahteraan -->
+
+
+<div class="statistik-card">
+
+
+<h3>
+
+<i class="fas fa-chart-pie"></i>
+
+Kesejahteraan Keluarga
+
+</h3>
+
+
+<canvas id="chartSejahtera"></canvas>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Infrastruktur -->
+
+
+<div class="statistik-card">
+
+
+<h3>
+
+<i class="fas fa-road"></i>
+
+Infrastruktur Desa
+
+</h3>
+
+
+<canvas id="chartInfrastruktur"></canvas>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- Capaian -->
+
+
+<div class="statistik-card">
+
+
+<h3>
+
+<i class="fas fa-trophy"></i>
+
+Capaian 2025
+
+</h3>
+
+
+<canvas id="chartCapaian"></canvas>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- Pendapatan -->
+
+
+<div class="statistik-card">
+
+
+<h3>
+
+<i class="fas fa-coins"></i>
+
+Pendapatan Masyarakat
+
+</h3>
+
+
+<canvas id="chartPendapatan"></canvas>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- Potensi -->
+
+
+<div class="statistik-card">
+
+
+<h3>
+
+<i class="fas fa-seedling"></i>
+
+Potensi Desa
+
+</h3>
+
+
+<canvas id="chartPotensi"></canvas>
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ================= CLOSING ================= -->
+
+
+<section class="statistik-closing">
+
+
+<div class="container">
+
+
+<h2>
+
+Data Hari Ini,
+Dasar Pembangunan Esok
+
+</h2>
+
+
+<p>
+
+Melalui data yang akurat,
+Desa Bina Bhakti terus membangun
+perencanaan desa yang lebih baik,
+modern, dan berkelanjutan.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ================= NAVIGASI ================= -->
+
+
+<section class="page-navigation">
+
+
+<div class="container">
+
+
+
+<a href="pembangunan.html" class="nav-button">
+
+<i class="fas fa-arrow-left"></i>
+
+Pembangunan Desa
+
+</a>
+
+
+
+
+<a href="prestasi.html" class="nav-button">
+
+Prestasi Desa
+
+<i class="fas fa-arrow-right"></i>
+
+</a>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- ================= FOOTER ================= -->
+
+
+<footer class="footer">
+
+
+<h3>
+
+DESA CANTIK DESA BINA BHAKTI
+
+</h3>
+
+
+<p>
+
+Kecamatan Sematu Jaya • Kabupaten Lamandau
+
+</p>
+
+
+<div class="footer-line"></div>
+
+
+
+<small>
+
+Design by 
+<strong>
+Saiful Rully (Mahaprana Print)
+</strong>
+
+</small>
+
+
+</footer>
+
+
+
+
+
+
+
+
+
+<script src="../assets/page.js"></script>
+
+<script src="../assets/statistik.js"></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Desa Cantik | Desa Bina Bhakti</title>
+
+    <meta name="description" content="Website Desa Cantik Desa Bina Bhakti">
+
+    <link rel="stylesheet" href="assets/style.css">
+
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header id="header">
+
+    <div class="container">
+
+        <div class="navbar">
+
+            <!-- Logo -->
+
+            <a href="#" class="logo" data-page="home">
+
+                <img src="img/logo.gif" alt="Logo Desa">
+
+                <div>
+
+                    <h2>Desa Cantik</h2>
+
+                    <span>Desa Bina Bhakti</span>
+
+                </div>
+
+            </a>
+
+            <!-- Menu Desktop -->
+
+            <nav class="menu">
+
+                <a href="https://binabhakti.id/">Beranda Bina Bhakti</a>
+
+                <a href="pages/profil.html" data-page="profil">Profil</a>
+
+                <a href="pages/geografis.html" data-page="geografis">Geografis</a>
+
+                <a href="pages/demografis.html" data-page="demografis">Demografis</a>
+
+                <a href="pages/potensi.html" data-page="potensi">Potensi</a>
+
+
+            </nav>
+
+            <!-- Tombol Sidebar -->
+
+            <button id="menuButton" onclick="toggleSidebar()">
+
+                ☰
+
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+    <!-- =========================
+         SIDEBAR
+    ========================== -->
+
+    <aside id="sidebar">
+
+    <div class="sidebar-header">
+
+        <img src="img/logo.png" alt="Logo Desa">
+
+        <h2>Desa Cantik</h2>
+
+        <p>Desa Bina Bhakti</p>
+
+    </div>
+
+    <nav class="sidebar-menu">
+
+        <a href="https://binabhakti.id/">🏠 Beranda</a>
+
+        <a href="pages/profil.html" data-page="profil">📖 Profil Desa</a>
+
+        <a href="pages/geografis.html" data-page="geografis">🗺 Geografis</a>
+
+        <a href="pages/demografis.html" data-page="demografis">👨 Demografis</a>
+
+        <a href="pages/pemerintahan.html" data-page="pemerintahan">🏛 Pemerintahan</a>
+
+        <a href="pages/masyarakat.html" data-page="sosial">🤝 Sosial</a>
+
+        <a href="pages/ekonomi.html" data-page="ekonomi">💰 Ekonomi</a>
+
+        <a href="pages/potensi.html" data-page="potensi">🌾 Potensi</a>
+
+        <a href="pages/pembangunan.html" data-page="pembangunan">🚧 Pembangunan</a>
+
+        <a href="pages/desa-cantik.html" data-page="desa-cantik">📊 Desa Cantik</a>
+
+        <a href="pages/prestasi.html" data-page="prestasi">🏆 Prestasi</a>
+
+        <a href="pages/penutup.html" data-page="penutup">📞 Penutup</a>
+
+    </nav>
+
+</aside>
+<div id="overlay" onclick="closeSidebar()"></div>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+<section class="hero">
+
+    <!-- Background Video -->
+
+    <video class="hero-video"
+           autoplay
+           muted
+           loop
+           playsinline>
+
+        <source src="video/hero.mp4" type="video/mp4">
+
+    </video>
+
+    <!-- Overlay -->
+
+    <div class="hero-overlay"></div>
+
+    <!-- Isi Hero -->
+
+    <div class="container">
+
+        <div class="hero-content">
+
+            <span class="hero-tag">
+                Website Desa Cantik
+            </span>
+
+            <h1>DESA BINA BHAKTI</h1>
+
+            <h3>Kecamatan Sematu Jaya • Kabupaten Lamandau</h3>
+
+            <p>
+                Selamat datang di Website Desa Cantik Desa Bina Bhakti.
+                Mengenal sejarah, potensi, pembangunan,
+                serta kehidupan masyarakat melalui informasi
+                yang lengkap, akurat dan mudah dipahami.
+            </p>
+
+            <div class="hero-button">
+
+                <div class="hero-button">
+
+
+    <button class="btn" onclick="openModal()">
+
+        ▶ Sejarah Desa
+
+    </button>
+
+
+
+    <a href="#statistik" class="btn btn-outline">
+
+        Jelajahi Desa
+
+    </a>
+
+
+
+    <button class="btn btn-mars"
+            onclick="playMars()"
+            id="marsBtn">
+
+        🎵 Putar Mars Desa
+
+    </button>
+
+
+
+    <button class="btn btn-cerita"
+            onclick="playCerita()"
+            id="ceritaBtn">
+
+        🎧 Cerita Desa
+
+    </button>
+
+
+
+</div>
+
+
+
+
+
+<audio id="marsAudio">
+
+    <source src="audio/mars-desa.mp3"
+            type="audio/mpeg">
+
+</audio>
+
+
+
+<audio id="ceritaAudio">
+
+    <source src="audio/cerita-desa.mp3"
+            type="audio/mpeg">
+
+</audio>
+
+        <!-- FOTO KEPALA DESA -->
+
+        <img src="img/kepala-desa.png"
+             alt="Kepala Desa"
+             class="hero-kades">
+
+    </div>
+
+</section>
+
+<!-- =========================
+     FAKTA SINGKAT DESA
+========================== -->
+
+<section id="statistik">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Fakta Singkat Desa</h2>
+
+            <p>
+
+                Sekilas informasi mengenai Desa Bina Bhakti.
+
+            </p>
+
+        </div>
+
+        <div class="fakta-grid">
+
+
+    <div class="fakta-card">
+
+        <div class="icon">👥</div>
+
+        <h3 class="counter" data-target="1364">0</h3>
+
+        <span>Jumlah Penduduk</span>
+
+    </div>
+
+
+
+
+
+    <div class="fakta-card">
+
+        <div class="icon">👨‍👩‍👧‍👦</div>
+
+        <h3 class="counter" data-target="437">0</h3>
+
+        <span>Kepala Keluarga</span>
+
+    </div>
+
+
+
+
+
+    <div class="fakta-card">
+
+        <div class="icon">📍</div>
+
+        <h3 class="counter" data-target="2353">0</h3>
+
+        <span>Luas Wilayah (Ha)</span>
+
+    </div>
+
+
+
+
+
+    <div class="fakta-card">
+
+        <div class="icon">🏡</div>
+
+        <h3 class="counter" data-target="405">0</h3>
+
+        <span>Bangunan</span>
+
+    </div>
+
+
+
+
+
+    <div class="fakta-card">
+
+        <div class="icon">🕌</div>
+
+        <h3 class="counter" data-target="12">0</h3>
+
+        <span>Tempat Ibadah</span>
+
+    </div>
+
+
+
+
+
+    <div class="fakta-card">
+
+        <div class="icon">🎓</div>
+
+        <h3 class="counter" data-target="4">0</h3>
+
+        <span>Sekolah</span>
+
+    </div>
+
+
+
+
+
+    <div class="fakta-card">
+
+        <div class="icon">🌾</div>
+
+        <h3 class="counter" data-target="3">0</h3>
+
+        <span>Kelompok Tani</span>
+
+    </div>
+
+
+
+
+
+    <div class="fakta-card">
+
+        <div class="icon">🏞️</div>
+
+        <h3 class="counter" data-target="1">0</h3>
+
+        <span>Objek Wisata</span>
+
+    </div>
+
+
+</div>
+
+</section>
+
+<!-- ==========================================================
+     JELAJAHI PROFIL DESA
+========================================================== -->
+
+<section id="jelajah">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Jelajahi Profil Desa</h2>
+
+            <p>
+                Pilih informasi yang ingin Anda ketahui mengenai Desa Bina Bhakti.
+            </p>
+
+        </div>
+
+        <div class="jelajah-wrapper">
+
+            <button class="slider-btn prev" onclick="slideJelajah(-300)">
+                ❮
+            </button>
+
+            <div class="jelajah-slider" id="jelajahSlider">
+
+                <a href="pages/profil.html"
+                    class="jelajah-card">
+                    <div class="card-image profil-img"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-content">
+                        <span>01</span>
+                        <h3>Selayang Pandang Desa</h3>
+                    </div>
+                </a>
+
+                <a href="pages/geografis.html"
+                    class="jelajah-card">
+                    <div class="card-image geografis-img"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-content">
+                        <span>02</span>
+                        <h3>Kondisi Geografis</h3>
+                    </div>
+                </a>
+
+                <a href="pages/demografis.html"
+                    class="jelajah-card">
+                    <div class="card-image demografis-img"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-content">
+                        <span>03</span>
+                        <h3>Demografis</h3>
+                    </div>
+                </a>
+
+                <a href="pages/pemerintahan.html"
+                    class="jelajah-card">
+                    <div class="card-image pemerintahan-img"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-content">
+                        <span>04</span>
+                        <h3>Pemerintahan Desa</h3>
+                    </div>
+                </a>
+
+                <a href="pages/masyarakat.html"
+                    class="jelajah-card">
+                    <div class="card-image masyarakat-img"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-content">
+                        <span>05</span>
+                        <h3>Kehidupan Sosial</h3>
+                    </div>
+                </a>
+
+                <a href="pages/ekonomi.html"
+                    class="jelajah-card">
+                    <div class="card-image ekonomi-img"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-content">
+                        <span>06</span>
+                        <h3>Perekonomian Desa</h3>
+                    </div>
+                </a>
+
+                <a href="pages/sarana.html"
+                    class="jelajah-card">
+                    <div class="card-image sarana-img"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-content">
+                        <span>07</span>
+                        <h3>Sarana & Prasarana</h3>
+                    </div>
+                </a>
+
+                <a href="pages/potensi.html"
+                    class="jelajah-card">
+                    <div class="card-image potensi-img"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-content">
+                        <span>08</span>
+                        <h3>Potensi Desa</h3>
+                    </div>
+                </a>
+
+                <a href="pages/pembangunan.html"
+                    class="jelajah-card">
+                    <div class="card-image pembangunan-img"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-content">
+                        <span>09</span>
+                        <h3>Pembangunan Desa</h3>
+                    </div>
+                </a>
+
+                <a href="pages/desa-cantik.html"
+                    class="jelajah-card">
+                    <div class="card-image desa-cantik-img"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-content">
+                        <span>10</span>
+                        <h3>Statistik Desa</h3>
+                    </div>
+                </a>
+
+                <a href="pages/desa-cantik.html"
+                    class="jelajah-card">
+                    <div class="card-image prestasi-img"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-content">
+                        <span>11</span>
+                        <h3>Prestasi & Penghargaan</h3>
+                    </div>
+                </a>
+
+                
+                <a href="pages/desa-cantik.html"
+                    class="jelajah-card">
+                    <div class="card-image penutup-img"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-content">
+                        <span>12</span>
+                        <h3>Penutup</h3>
+                    </div>
+                </a>
+
+            </div>
+
+            <button class="slider-btn next" onclick="slideJelajah(300)">
+                ❯
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- =========================
+         VIDEO SEJARAH
+    ========================== -->
+
+    <section id="video">
+
+    </section>
+
+
+<!-- ==========================================================
+     VIDEO & BUKU DIGITAL
+========================================================== -->
+
+<section id="ebook">
+
+    <div class="container">
+
+        <div class="ebook-grid">
+
+            <!-- ================= VIDEO ================= -->
+
+            <div class="video-box">
+
+                <h2>Video Capaian Kinerja</h2>
+
+                <h1>Pembangunan Desa</h1>
+
+                <div class="video-preview">
+
+                    <video
+                        controls
+                        poster="img/video-cover.webp">
+
+                        <source src="video/pembangunan.mp4" type="video/mp4">
+
+                    </video>
+
+                </div>
+
+            </div>
+
+            <!-- ================= PDF ================= -->
+
+            <div class="pdf-box">
+
+                <h2>Profil Lengkap</h2>
+
+                <h1>Desa Bina Bhakti</h1>
+
+                <img
+                    src="img/ebook-cover.webp"
+                    class="pdf-cover"
+                    alt="Buku Digital">
+
+                <p>
+
+                    Seluruh informasi desa,
+                    pembangunan,
+                    statistik,
+                    potensi,
+                    prestasi
+                    dan dokumentasi
+                    tersedia dalam
+                    Buku Digital Desa.
+
+                </p>
+
+                <div class="ebook-button">
+
+                    <a href="dokumen/profil-desa.pdf"
+                       target="_blank"
+                       class="btn">
+
+                        👁 Baca Buku
+
+                    </a>
+
+                    <a href="dokumen/profil-desa.pdf"
+                       download
+                       class="btn btn-outline">
+
+                        ⬇ Download
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- =========================
+         AUDIO PLAYER
+    ========================== -->
+
+    <div id="audioPlayer">
+
+    </div>
+
+
+    <!-- =========================
+         LOADING
+    ========================== -->
+
+    <div id="loading">
+
+    </div>
+
+
+<!-- =========================
+     MODAL VIDEO
+========================== -->
+
+<div id="modal">
+
+    <div class="modal-content">
+
+        <button class="close-modal" onclick="closeModal()">
+
+            ✕
+
+        </button>
+
+        <video
+            id="videoSejarah"
+            controls
+            preload="metadata"
+            playsinline>
+
+            <source src="video/sejarah-desa.mp4" type="video/mp4">
+
+            Browser Anda tidak mendukung video.
+
+        </video>
+
+    </div>
+
+</div>
+
+
+    <!-- =========================
+         BACK TO TOP
+    ========================== -->
+
+    <button id="backToTop">
+
+        ↑
+
+    </button>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="assets/app.js"></script>
+
+</body>
+
+</html>
+
+<!-- ==========================================================
+     FOOTER
+========================================================== -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <h3>DESA CANTIK DESA BINA BHAKTI</h3>
+
+        <p>
+            Kecamatan Sematu Jaya • Kabupaten Lamandau
+        </p>
+
+        <div class="footer-line"></div>
+
+        <small>
+
+            © 2026 Desa Bina Bhakti. All Rights Reserved.<br>
+            Design by <strong>Saiful Rully (Mahaprana Print)</strong>
+
+        </small>
+
+    </div>
+
+</footer>
+

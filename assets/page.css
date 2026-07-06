@@ -1,0 +1,7674 @@
+/* ==========================================================
+   ROOT
+========================================================== */
+
+:root{
+
+    --primary:#2E7D32;
+    --secondary:#4CAF50;
+    --dark:#1F4E24;
+    --light:#F8FAF8;
+    --white:#FFFFFF;
+    --text:#555555;
+    --border:#E8E8E8;
+
+    --shadow:0 10px 30px rgba(0,0,0,.08);
+
+    --radius:18px;
+
+    --transition:.35s ease;
+
+}
+
+/* ==========================================================
+   RESET
+========================================================== */
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    background:var(--light);
+    color:var(--text);
+    line-height:1.9;
+
+}
+
+img{
+
+    display:block;
+    max-width:100%;
+
+}
+
+a{
+
+    text-decoration:none;
+
+}
+
+.container{
+
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+
+}
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+.page-header{
+
+    background:#FFFFFF;
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
+    position:sticky;
+    top:0;
+    z-index:999;
+
+}
+
+.page-header .container{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:14px 0;
+
+}
+
+.logo{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+}
+
+.logo img{
+
+    width:58px;
+
+}
+
+.logo h2{
+
+    font-size:20px;
+    color:var(--primary);
+
+}
+
+.logo span{
+
+    color:#777;
+    font-size:14px;
+
+}
+
+.back-home{
+
+    background:var(--primary);
+    color:#FFFFFF;
+    padding:12px 22px;
+    border-radius:40px;
+    transition:var(--transition);
+
+}
+
+.back-home:hover{
+
+    background:var(--dark);
+
+}
+
+/* ==========================================================
+   BANNER
+========================================================== */
+
+.page-banner{
+
+    position:relative;
+    height:420px;
+    overflow:hidden;
+
+}
+
+.page-banner img{
+
+    width:100%;
+    height:100%;
+    object-fit:cover;
+
+}
+
+.banner-overlay{
+
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.45);
+
+}
+
+.banner-content{
+
+    position:absolute;
+    inset:0;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    color:#FFFFFF;
+
+}
+
+.page-number{
+
+    background:rgba(255,255,255,.18);
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    backdrop-filter:blur(10px);
+
+    margin-bottom:18px;
+
+    letter-spacing:2px;
+
+}
+
+.banner-content h1{
+
+    font-size:56px;
+    color:#FFFFFF;
+    margin: bottom 19px;
+
+}
+
+.banner-content p{
+
+    font-size:22px;
+    color:#caf7ad;
+
+}
+
+/* ==========================================================
+   AUDIO
+========================================================== */
+
+.audio-section{
+
+    padding:60px 0;
+    background:#FFFFFF;
+
+}
+
+.audio-section h2{
+
+    text-align:center;
+    color:var(--primary);
+    margin-bottom:25px;
+
+}
+
+.audio-section audio{
+
+    display:block;
+
+    width:100%;
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+/* ==========================================================
+   CONTENT
+========================================================== */
+
+.page-content{
+
+    padding:20px 0;
+
+}
+
+.page-content .container{
+
+    max-width:900px;
+
+}
+
+.page-content h2{
+
+    color:var(--primary);
+
+    font-size:34px;
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+}
+
+.page-content p{
+
+    margin-bottom:25px;
+
+    text-align:justify;
+
+    font-size:17px;
+
+}
+
+/* ==========================================================
+   IDENTITAS DESA
+========================================================== */
+
+.identitas{
+
+    padding:20px 0;
+
+    background:#e6f5da;
+
+}
+
+.identitas h2{
+
+    text-align:center;
+
+    color:var(--primary);
+
+    margin-bottom:40px;
+
+}
+
+.identitas-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+
+}
+
+.identitas-card{
+
+    background:#FFFFFF;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+}
+
+.identitas-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.identitas-card i{
+
+    font-size:34px;
+
+    color:var(--primary);
+
+    margin-bottom:18px;
+
+}
+
+.identitas-card h4{
+
+    margin-bottom:8px;
+
+    color:#333;
+
+}
+
+.identitas-card p{
+
+    margin:0;
+
+    color:#666;
+
+}
+
+/* ==========================================================
+   VISI MISI & VIDEO
+========================================================== */
+
+.visi-video{
+
+    padding:70px 0;
+
+    background:#FFFFFF;
+
+}
+
+
+.visi-video .container{
+
+    display:grid;
+
+    grid-template-columns:1.2fr .8fr;
+
+    gap:30px;
+
+    align-items:start;
+
+}
+
+
+/* VISI */
+
+.visi-box,
+.profil-video-box{
+
+    background:#FFFFFF;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    box-shadow:var(--shadow);
+
+}
+
+
+.section-tag{
+
+    color:var(--primary);
+
+    font-weight:600;
+
+}
+
+
+.visi-box h2{
+
+    color:var(--primary);
+
+    margin:10px 0 25px;
+
+}
+
+
+.visi-box h3{
+
+    margin:25px 0 15px;
+
+    color:#333;
+
+}
+
+
+.visi-text{
+
+    background:#F1F8F2;
+
+    padding:20px;
+
+    border-radius:15px;
+
+}
+
+
+/* NILAI */
+
+
+.nilai-visi{
+
+    display:grid;
+
+    gap:15px;
+
+}
+
+
+.nilai-visi div{
+
+    border-left:5px solid var(--primary);
+
+    padding-left:15px;
+
+}
+
+
+.nilai-visi b{
+
+    color:var(--primary);
+
+}
+
+
+/* MISI */
+
+
+.misi-list li{
+
+    margin-bottom:12px;
+
+    padding-left:10px;
+
+}
+
+
+/* VIDEO */
+
+
+.profil-video-box video{
+
+    width:100%;
+
+    border-radius:18px;
+
+}
+
+
+.video-box h3{
+
+    margin-top:20px;
+
+    color:var(--primary);
+
+}
+
+
+/* HP */
+
+
+@media(max-width:900px){
+
+
+.visi-video .container{
+
+    grid-template-columns:1fr;
+
+}
+
+
+}
+
+/* ==========================================================
+   BAB 02 - GEOGRAFIS
+========================================================== */
+
+
+/* ==========================
+   GOOGLE MAPS
+========================== */
+
+.peta-desa{
+
+    padding:70px 0;
+
+    background:#FFFFFF;
+
+}
+
+
+.peta-desa h2{
+
+    text-align:center;
+
+    color:var(--primary);
+
+    font-size:32px;
+
+    margin-bottom:35px;
+
+}
+
+
+.map-box{
+
+    width:100%;
+
+    height:500px;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+}
+
+
+.map-box iframe{
+
+    width:100%;
+
+    height:100%;
+
+    border:none;
+
+}
+
+
+
+
+
+/* ==========================
+   DATA GEOGRAFIS
+========================== */
+
+
+.geo-data{
+
+    padding:70px 0;
+
+    background:#F8FAF8;
+
+}
+
+
+.geo-data h2{
+
+    text-align:center;
+
+    color:var(--primary);
+
+    font-size:32px;
+
+    margin-bottom:40px;
+
+}
+
+
+.geo-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+
+
+.geo-card{
+
+    background:#FFFFFF;
+
+    padding:35px 20px;
+
+    border-radius:22px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+    transition:.3s;
+
+}
+
+
+.geo-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+.geo-card i{
+
+    width:70px;
+
+    height:70px;
+
+    line-height:70px;
+
+    background:#E8F5E9;
+
+    color:var(--primary);
+
+    border-radius:50%;
+
+    font-size:30px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.geo-card h3{
+
+    color:var(--primary);
+
+    font-size:28px;
+
+    margin-bottom:8px;
+
+}
+
+
+.geo-card p{
+
+    color:#555;
+
+}
+
+
+
+
+
+/* ==========================
+   BATAS WILAYAH
+========================== */
+
+
+.batas{
+
+    padding:70px 0;
+
+    background:#FFFFFF;
+
+}
+
+
+.batas h2{
+
+    text-align:center;
+
+    color:var(--primary);
+
+    font-size:32px;
+
+    margin-bottom:40px;
+
+}
+
+
+.batas-box{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+}
+
+
+.batas-box div{
+
+    background:#FFFFFF;
+
+    padding:30px;
+
+    border-radius:22px;
+
+    box-shadow:var(--shadow);
+
+    border-left:7px solid var(--primary);
+
+}
+
+
+.batas-box h3{
+
+    color:var(--primary);
+
+    font-size:22px;
+
+    margin-bottom:10px;
+
+}
+
+
+.batas-box p{
+
+    color:#555;
+
+    line-height:1.7;
+
+}
+
+
+/* ==========================================================
+   BAB 03 - DEMOGRAFIS DESA CANTIK
+========================================================== */
+
+
+/* ==========================
+   STATISTIK PENDUDUK
+========================== */
+
+
+.stat-penduduk{
+
+    padding:60px 0;
+
+    background:#F8FAF8;
+
+}
+
+
+
+.stat-penduduk h2{
+
+    text-align:center;
+
+    color:var(--primary);
+
+    font-size:32px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.stat-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+    margin-bottom:45px;
+
+}
+
+
+
+.stat-card{
+
+    background:#FFFFFF;
+
+    padding:35px 20px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+    transition:.3s;
+
+}
+
+
+
+.stat-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+.stat-card i{
+
+    width:75px;
+
+    height:75px;
+
+    line-height:75px;
+
+    border-radius:50%;
+
+    background:#E8F5E9;
+
+    color:var(--primary);
+
+    font-size:32px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.stat-card h3{
+
+    font-size:42px;
+
+    color:var(--primary);
+
+}
+
+
+
+.stat-card p{
+
+    color:#555;
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================================================
+   INFOGRAFIS
+========================================================== */
+
+
+.infografis{
+
+    padding:60px 0;
+
+    background:#FFFFFF;
+
+}
+
+
+
+.infografis h2{
+
+    text-align:center;
+
+    color:var(--primary);
+
+    font-size:32px;
+
+    margin-bottom:45px;
+
+}
+
+
+
+
+
+.chart-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:35px;
+
+}
+
+
+
+
+
+.chart-box{
+
+    background:#FFFFFF;
+
+    padding:35px;
+
+    border-radius:28px;
+
+    box-shadow:var(--shadow);
+
+    transition:.3s;
+
+}
+
+
+
+.chart-box:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+.chart-box h3{
+
+    text-align:center;
+
+    color:var(--primary);
+
+    font-size:23px;
+
+    margin-bottom:25px;
+
+}
+
+
+
+
+.chart-box canvas{
+
+    width:100%!important;
+
+    height:300px!important;
+
+}
+
+
+
+
+
+.chart-box.besar{
+
+    grid-column:span 2;
+
+}
+
+
+
+.chart-box.besar canvas{
+
+    height:360px!important;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================
+   KETERANGAN ANGKA DI ATAS GRAFIK
+========================================================== */
+
+
+.info-mini{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:15px;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.info-mini div{
+
+    background:#E8F5E9;
+
+    padding:18px 10px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+}
+
+
+
+.info-mini b{
+
+    display:block;
+
+    color:var(--primary);
+
+    font-size:28px;
+
+    margin-bottom:5px;
+
+}
+
+
+
+.info-mini span{
+
+    font-size:14px;
+
+    color:#555;
+
+}
+
+
+
+
+
+.info-mini.empat{
+
+    grid-template-columns:repeat(4,1fr);
+
+}
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================
+   RESPONSIVE DEMOGRAFIS
+========================================================== */
+
+
+@media(max-width:900px){
+
+
+.stat-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+
+.chart-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.chart-box.besar{
+
+    grid-column:span 1;
+
+}
+
+
+
+.info-mini.empat{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+}
+
+
+
+
+
+
+
+@media(max-width:600px){
+
+
+
+.stat-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.stat-card h3{
+
+    font-size:36px;
+
+}
+
+
+
+.chart-box{
+
+    padding:25px;
+
+}
+
+
+
+.chart-box canvas{
+
+    height:260px!important;
+
+}
+
+
+
+.info-mini{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.info-mini.empat{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE INFOGRAFIS
+========================================================== */
+
+
+@media(max-width:900px){
+
+
+.chart-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.chart-box.besar{
+
+    grid-column:span 1;
+
+}
+
+
+}
+
+
+
+@media(max-width:600px){
+
+
+.infografis{
+
+    padding:50px 0;
+
+}
+
+
+
+.chart-box{
+
+    padding:25px;
+
+    min-height:auto;
+
+}
+
+
+
+.chart-box canvas{
+
+    height:260px !important;
+
+}
+
+
+}
+
+/* ==========================================================
+   RESPONSIVE DEMOGRAFIS
+========================================================== */
+
+
+@media(max-width:900px){
+
+
+.stat-grid,
+.pendidikan-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+}
+
+
+
+@media(max-width:600px){
+
+
+.stat-grid,
+.pendidikan-grid,
+.kk-box,
+.rasio-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.stat-card h3{
+
+    font-size:36px;
+
+}
+
+
+}
+
+/* ==========================================================
+   RESPONSIVE GEOGRAFIS
+========================================================== */
+
+
+@media(max-width:900px){
+
+
+.geo-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+}
+
+
+
+@media(max-width:600px){
+
+
+.map-box{
+
+    height:350px;
+
+}
+
+
+.geo-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+.batas-box{
+
+    grid-template-columns:1fr;
+
+}
+
+
+}
+
+/* =====================================================
+   PEMERINTAHAN DESA
+===================================================== */
+
+
+.struktur-desa {
+    padding: 80px 0;
+    background:
+    linear-gradient(
+        180deg,
+        #f7fbff,
+        #ffffff
+    );
+}
+
+
+
+.struktur-desa h2,
+.bpd-section h2,
+.rt-section h2,
+.linmas h2 {
+
+    text-align:center;
+    font-size:32px;
+    color:#064e3b;
+    margin-bottom:40px;
+
+}
+
+
+
+.sub-title {
+
+    margin-top:50px;
+
+}
+
+
+
+
+
+/* ============================
+   KEPALA DESA
+============================ */
+
+
+.kepala-desa {
+
+    width:360px;
+
+    margin:0 auto 50px;
+
+    padding:30px;
+
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+
+    text-align:center;
+
+
+    background:white;
+
+
+    border-radius:25px;
+
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.12);
+
+
+    position:relative;
+
+
+    transition:.4s;
+
+}
+
+
+
+
+
+.kepala-desa:hover {
+
+    transform:translateY(-8px);
+
+}
+
+
+
+
+
+
+.kepala-desa img {
+
+
+    display:block;
+
+
+    width:160px;
+
+    height:160px;
+
+
+    object-fit:cover;
+
+
+    object-position:center;
+
+
+    border-radius:50%;
+
+
+    border:6px solid #16a34a;
+
+
+    margin:0 auto 20px;
+
+
+}
+
+
+
+
+
+
+.kepala-desa div {
+
+
+    width:100%;
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+
+.kepala-desa span {
+
+
+    display:block;
+
+
+    font-size:14px;
+
+
+    color:#16a34a;
+
+
+    font-weight:bold;
+
+
+}
+
+
+
+
+
+
+.kepala-desa h3 {
+
+
+    margin-top:10px;
+
+
+    font-size:22px;
+
+
+    color:#111827;
+
+
+}
+
+/* ============================
+   CARD ORGANISASI
+============================ */
+
+
+.org-card {
+
+    background:
+
+    rgba(255,255,255,.9);
+
+
+    backdrop-filter:blur(10px);
+
+
+    padding:25px;
+
+
+    border-radius:20px;
+
+
+    text-align:center;
+
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.10);
+
+
+    transition:.35s;
+
+
+}
+
+
+
+
+.org-card:hover {
+
+    transform:translateY(-7px);
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.18);
+
+}
+
+
+
+
+.org-card i {
+
+    font-size:35px;
+
+    color:#059669;
+
+    margin-bottom:15px;
+
+}
+
+
+
+
+.org-card span {
+
+    display:block;
+
+    font-size:13px;
+
+    color:#059669;
+
+    font-weight:700;
+
+    letter-spacing:.5px;
+
+}
+
+
+
+
+.org-card h3 {
+
+    margin-top:10px;
+
+    font-size:18px;
+
+    color:#1f2937;
+
+}
+
+
+
+
+
+.utama {
+
+    max-width:350px;
+
+    margin:0 auto 30px;
+
+}
+
+
+
+
+
+
+.staff {
+
+    max-width:330px;
+
+    margin:40px auto 0;
+
+}
+
+
+
+
+
+
+/* ============================
+   GRID PERANGKAT DESA
+============================ */
+
+
+.org-grid {
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+
+
+/* posisi 2 kartu terakhir ke tengah */
+
+.org-grid .org-card:nth-child(5){
+
+    grid-column:2;
+
+}
+
+
+.org-grid .org-card:nth-child(6){
+
+    grid-column:3;
+
+}
+
+
+
+
+
+
+/* ============================
+   RESPONSIVE TABLET
+============================ */
+
+
+@media(max-width:1000px){
+
+
+.org-grid {
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+}
+
+
+
+.org-grid .org-card:nth-child(5),
+.org-grid .org-card:nth-child(6){
+
+    grid-column:auto;
+
+}
+
+
+}
+
+
+
+
+
+
+/* ============================
+   RESPONSIVE HP
+============================ */
+
+
+@media(max-width:600px){
+
+
+.org-grid {
+
+    grid-template-columns:1fr;
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/* ============================
+   GARIS STRUKTUR
+============================ */
+
+
+.kepala-desa::after {
+
+
+    content:"";
+
+    position:absolute;
+
+    width:3px;
+
+    height:40px;
+
+    background:#16a34a;
+
+    bottom:-40px;
+
+    left:50%;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ============================
+   BPD
+============================ */
+
+
+.bpd-section {
+
+
+    padding:80px 0;
+
+
+    background:#ecfdf5;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ============================
+   RT RW LINMAS
+============================ */
+
+
+.rt-section,
+.linmas {
+
+
+    padding:70px 0;
+
+
+}
+
+
+
+.rt-box {
+
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:25px;
+
+
+    box-shadow:
+
+    0 10px 30px rgba(0,0,0,.10);
+
+
+
+}
+
+
+
+.rt-box h3 {
+
+
+    color:#047857;
+
+    margin-top:25px;
+
+    font-size:22px;
+
+
+}
+
+
+
+.rt-box p {
+
+
+    line-height:2;
+
+    color:#374151;
+
+
+}
+
+/* ============================
+   LINMAS
+============================ */
+
+
+.danton-card{
+
+    width:330px;
+
+    margin:0 auto 40px;
+
+    padding:35px;
+
+
+    background:white;
+
+
+    text-align:center;
+
+
+    border-radius:25px;
+
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.12);
+
+
+    transition:.3s;
+
+}
+
+
+
+.danton-card:hover{
+
+
+    transform:translateY(-7px);
+
+
+}
+
+
+
+.danton-card i{
+
+
+    font-size:50px;
+
+    color:#059669;
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+.danton-card span{
+
+
+    display:block;
+
+
+    color:#059669;
+
+
+    font-weight:700;
+
+
+}
+
+
+
+
+.danton-card h3{
+
+
+    margin-top:10px;
+
+    font-size:22px;
+
+
+    color:#111827;
+
+
+}
+
+
+
+
+
+
+.linmas-grid{
+
+
+    display:grid;
+
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(180px,1fr));
+
+
+    gap:18px;
+
+
+}
+
+
+
+
+
+
+.linmas-card{
+
+
+    background:white;
+
+
+    padding:18px;
+
+
+    text-align:center;
+
+
+    border-radius:15px;
+
+
+    font-weight:bold;
+
+
+    color:#1f2937;
+
+
+    box-shadow:
+    0 8px 20px rgba(0,0,0,.10);
+
+
+    position:relative;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+
+
+.linmas-card::before{
+
+
+    content:"🛡️";
+
+
+    display:block;
+
+
+    margin-bottom:8px;
+
+
+}
+
+
+
+
+
+
+
+.linmas-card:hover{
+
+
+    transform:translateY(-5px);
+
+
+}
+
+
+
+
+
+
+
+@media(max-width:500px){
+
+
+.danton-card{
+
+
+    width:auto;
+
+
+}
+
+
+}
+
+
+/* ============================
+   RW RT CARD
+============================ */
+
+
+.wilayah-title{
+
+    text-align:center;
+
+    margin:45px 0 25px;
+
+    font-size:24px;
+
+    color:#047857;
+
+}
+
+
+
+
+
+.rw-grid,
+.rt-grid{
+
+    display:grid;
+
+    gap:20px;
+
+}
+
+
+
+
+.rw-grid{
+
+    grid-template-columns:
+    repeat(4,1fr);
+
+}
+
+
+
+.rt-grid{
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(180px,1fr));
+
+}
+
+
+
+
+
+
+.wilayah-card{
+
+
+    background:white;
+
+
+    padding:22px;
+
+
+    text-align:center;
+
+
+    border-radius:20px;
+
+
+    box-shadow:
+
+    0 10px 25px rgba(0,0,0,.10);
+
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+
+
+.wilayah-card:hover{
+
+
+    transform:translateY(-6px);
+
+
+}
+
+
+
+
+
+.wilayah-card span{
+
+
+    display:inline-block;
+
+
+    padding:6px 15px;
+
+
+    border-radius:30px;
+
+
+    background:#059669;
+
+
+    color:white;
+
+
+    font-weight:bold;
+
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+
+.wilayah-card h3{
+
+
+    font-size:16px;
+
+
+    color:#1f2937;
+
+
+}
+
+
+
+@media(max-width:768px){
+
+
+.rw-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+}
+
+
+
+@media(max-width:500px){
+
+
+.rw-grid,
+.rt-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+}
+
+
+
+
+
+/* ============================
+   ANIMASI SCROLL
+============================ */
+
+
+.org-card,
+.kepala-desa,
+.rt-box {
+
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    animation:
+
+    muncul .8s forwards;
+
+
+}
+
+
+
+@keyframes muncul {
+
+
+    to {
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ============================
+   RESPONSIVE HP
+============================ */
+
+
+@media(max-width:768px){
+
+
+.struktur-desa {
+
+    padding:50px 15px;
+
+}
+
+
+
+.struktur-desa h2,
+.bpd-section h2,
+.rt-section h2,
+.linmas h2 {
+
+
+    font-size:25px;
+
+
+}
+
+
+
+.kepala-desa img {
+
+    width:130px;
+
+    height:130px;
+
+}
+
+
+
+.rt-box {
+
+
+    padding:25px;
+
+}
+
+
+
+}
+
+/* =====================================================
+   KEHIDUPAN MASYARAKAT
+===================================================== */
+
+
+
+/* ============================
+   OPENING
+============================ */
+
+
+.masyarakat-opening{
+
+    padding:90px 0;
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #ecfdf5,
+        #ffffff
+    );
+
+}
+
+
+
+
+.opening-grid{
+
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:50px;
+
+
+    align-items:center;
+
+
+}
+
+
+
+
+
+.opening-text span{
+
+
+    color:#059669;
+
+    font-weight:bold;
+
+    letter-spacing:1px;
+
+
+}
+
+
+
+.opening-text h1{
+
+
+    font-size:45px;
+
+    color:#064e3b;
+
+    margin:15px 0;
+
+
+}
+
+
+
+.opening-text p{
+
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    color:#374151;
+
+
+}
+
+
+
+
+
+
+
+.opening-img img{
+
+
+    width:100%;
+
+    height:380px;
+
+
+    object-fit:cover;
+
+
+    border-radius:30px;
+
+
+    box-shadow:
+
+    0 20px 40px rgba(0,0,0,.20);
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ============================
+   NILAI DESA
+============================ */
+
+
+.nilai-desa{
+
+    padding:80px 0;
+
+}
+
+
+
+.nilai-desa h2{
+
+
+    text-align:center;
+
+    color:#064e3b;
+
+    font-size:32px;
+
+    margin-bottom:40px;
+
+
+}
+
+
+
+
+
+.nilai-grid{
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(3,1fr);
+
+
+    gap:25px;
+
+
+}
+
+
+
+
+
+
+
+.nilai-card{
+
+
+    background:white;
+
+
+    padding:35px 25px;
+
+
+    border-radius:25px;
+
+
+    text-align:center;
+
+
+    box-shadow:
+
+    0 10px 30px rgba(0,0,0,.12);
+
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+
+
+
+.nilai-card:hover{
+
+
+    transform:translateY(-8px);
+
+
+}
+
+
+
+
+
+
+.nilai-card i{
+
+
+    font-size:45px;
+
+
+    color:#059669;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+.nilai-card h3{
+
+
+    font-size:22px;
+
+    color:#064e3b;
+
+
+}
+
+
+
+
+
+
+.nilai-card p{
+
+
+    color:#4b5563;
+
+    line-height:1.6;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ============================
+   CERITA SECTION
+============================ */
+
+
+
+.cerita-section{
+
+
+    padding:90px 0;
+
+
+}
+
+
+
+
+.cerita-section.warna{
+
+
+    background:#ecfdf5;
+
+
+}
+
+
+
+
+
+
+.cerita-grid{
+
+
+    display:grid;
+
+
+    grid-template-columns:1fr 1fr;
+
+
+    gap:50px;
+
+
+    align-items:center;
+
+
+}
+
+
+
+
+
+
+
+.cerita-grid.reverse img{
+
+
+    order:2;
+
+
+}
+
+
+
+
+
+.cerita-grid img{
+
+
+    width:100%;
+
+
+    height:350px;
+
+
+    object-fit:cover;
+
+
+    border-radius:30px;
+
+
+
+    box-shadow:
+
+    0 15px 35px rgba(0,0,0,.18);
+
+
+
+}
+
+
+
+
+
+
+
+
+.cerita-grid h2{
+
+
+    font-size:32px;
+
+
+    color:#064e3b;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+
+
+.cerita-grid p{
+
+
+    font-size:17px;
+
+
+    line-height:1.9;
+
+
+    color:#374151;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ============================
+   GENERASI
+============================ */
+
+
+.generasi{
+
+
+    padding:80px 0;
+
+
+    background:white;
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+.generasi h2{
+
+
+    font-size:32px;
+
+    color:#064e3b;
+
+    margin-bottom:35px;
+
+
+}
+
+
+
+
+
+.galeri-grid{
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(3,1fr);
+
+
+    gap:25px;
+
+
+    margin-bottom:35px;
+
+
+}
+
+
+
+
+
+
+.galeri-grid img{
+
+
+    width:100%;
+
+
+    height:230px;
+
+
+    object-fit:cover;
+
+
+    border-radius:25px;
+
+
+    box-shadow:
+
+    0 10px 25px rgba(0,0,0,.15);
+
+
+}
+
+
+
+
+
+
+
+.generasi p{
+
+
+    max-width:850px;
+
+
+    margin:auto;
+
+
+    line-height:1.8;
+
+
+    color:#374151;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ============================
+   QUOTE PENUTUP
+============================ */
+
+
+.quote-desa{
+
+
+    position:relative;
+
+
+    height:400px;
+
+
+    overflow:hidden;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+
+
+.quote-desa img{
+
+
+    position:absolute;
+
+
+    width:100%;
+
+
+    height:100%;
+
+
+    object-fit:cover;
+
+
+    filter:brightness(45%);
+
+
+}
+
+
+
+
+
+
+.quote-desa div{
+
+
+    position:relative;
+
+
+    max-width:900px;
+
+
+    padding:30px;
+
+
+}
+
+
+
+
+
+
+
+.quote-desa h2{
+
+
+    color:white;
+
+
+    font-size:35px;
+
+
+    line-height:1.5;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ============================
+   ANIMASI
+============================ */
+
+
+
+.nilai-card,
+.cerita-grid img,
+.opening-img img{
+
+
+    animation:
+
+    fadeNaik .9s ease;
+
+
+}
+
+
+
+
+
+@keyframes fadeNaik{
+
+
+from{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+}
+
+
+
+to{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+
+}
+
+
+
+/* =====================================================
+   PEREKONOMIAN DESA
+===================================================== */
+/* ============================
+   AUDIO NARASI
+============================ */
+
+.audio-box{
+
+    margin-top:20px;
+
+}
+
+
+#audioBtn{
+
+    border:none;
+
+    padding:15px 25px;
+
+    border-radius:50px;
+
+    background:white;
+
+    color:#047857;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.25);
+
+
+    transition:.3s;
+
+}
+
+
+
+#audioBtn i{
+
+    margin-right:8px;
+
+}
+
+
+
+
+#audioBtn:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+
+
+
+
+#audioBtn.playing{
+
+
+    background:#facc15;
+
+    color:#422006;
+
+
+}
+
+/* ============================
+   OPENING
+============================ */
+
+.ekonomi-opening{
+
+    padding:90px 20px;
+
+    text-align:center;
+
+    background:
+    linear-gradient(
+        135deg,
+        #064e3b,
+        #059669
+    );
+
+    color:white;
+
+}
+
+
+.ekonomi-opening span{
+
+    font-size:16px;
+
+    letter-spacing:2px;
+
+    font-weight:bold;
+
+    opacity:.9;
+
+}
+
+
+.ekonomi-opening h1{
+
+    font-size:48px;
+
+    margin:15px 0;
+
+}
+
+
+.ekonomi-opening p{
+
+    max-width:850px;
+
+    margin:auto;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+
+
+
+
+
+
+
+/* ============================
+   JUDUL SECTION
+============================ */
+
+
+.judul-section{
+
+    text-align:center;
+
+    font-size:34px;
+
+    color:#064e3b;
+
+    margin-bottom:45px;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* ============================
+   STATISTIK
+============================ */
+
+
+.ekonomi-stat,
+.ekonomi-section,
+.pendapatan{
+
+    padding:80px 0;
+
+}
+
+
+
+.stat-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+
+}
+
+
+
+
+
+
+
+.stat-card{
+
+    background:white;
+
+    padding:35px 25px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+
+    box-shadow:
+
+    0 12px 30px rgba(0,0,0,.12);
+
+
+    transition:.35s;
+
+}
+
+
+
+
+
+
+.stat-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+
+
+.stat-card i{
+
+    font-size:45px;
+
+    color:#059669;
+
+    margin-bottom:18px;
+
+}
+
+
+
+
+
+
+.stat-card h2{
+
+    font-size:38px;
+
+    color:#064e3b;
+
+}
+
+
+
+
+
+.stat-card p{
+
+    color:#374151;
+
+    font-weight:600;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* ============================
+   KESEJAHTERAAN
+============================ */
+
+
+.sejahtera-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(190px,1fr));
+
+    gap:20px;
+
+}
+
+
+
+
+
+.sejahtera-grid div{
+
+
+    background:#ecfdf5;
+
+
+    padding:25px;
+
+
+    border-radius:20px;
+
+
+    text-align:center;
+
+
+    font-weight:700;
+
+
+    color:#065f46;
+
+
+    box-shadow:
+    0 8px 25px rgba(0,0,0,.08);
+
+}
+
+
+
+
+.sejahtera-grid b{
+
+    display:block;
+
+    margin-top:12px;
+
+    font-size:26px;
+
+    color:#111827;
+
+}
+
+
+
+
+
+
+
+
+
+/* ============================
+   SEKTOR EKONOMI
+============================ */
+
+
+.sektor-ekonomi{
+
+
+    padding:90px 0;
+
+
+    background:
+
+    linear-gradient(
+        180deg,
+        #f0fdf4,
+        #ffffff
+    );
+
+
+}
+
+
+
+
+
+.sektor-grid{
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(280px,1fr));
+
+
+    gap:30px;
+
+
+}
+
+
+
+
+
+
+
+.sektor-card{
+
+
+    background:white;
+
+
+    padding:35px 25px;
+
+
+    border-radius:28px;
+
+
+    text-align:center;
+
+
+    box-shadow:
+
+    0 15px 35px rgba(0,0,0,.13);
+
+
+    transition:.35s;
+
+
+}
+
+
+
+
+
+
+.sektor-card:hover{
+
+
+    transform:translateY(-8px);
+
+
+}
+
+
+
+
+
+
+
+.sektor-icon{
+
+
+    width:85px;
+
+    height:85px;
+
+
+    margin:0 auto 20px;
+
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+
+    font-size:45px;
+
+
+    background:#ecfdf5;
+
+
+    border-radius:50%;
+
+
+}
+
+
+
+
+
+
+
+.sektor-card h3{
+
+
+    font-size:24px;
+
+
+    color:#064e3b;
+
+
+    margin-bottom:10px;
+
+
+}
+
+
+
+
+
+.sektor-card h2{
+
+
+    font-size:36px;
+
+
+    color:#059669;
+
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+
+
+
+.sektor-card p{
+
+
+    line-height:1.8;
+
+
+    color:#374151;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ============================
+   AYAM BROILER
+============================ */
+
+
+.highlight{
+
+
+    margin-top:25px;
+
+
+    padding:20px;
+
+
+    border-radius:18px;
+
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #facc15,
+        #f59e0b
+    );
+
+
+    color:#422006;
+
+
+    font-size:22px;
+
+
+    font-weight:bold;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ============================
+   JASA
+============================ */
+
+
+.jasa-grid{
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(180px,1fr));
+
+
+    gap:20px;
+
+
+}
+
+
+
+
+
+
+
+.jasa-grid div{
+
+
+    background:white;
+
+
+    padding:25px;
+
+
+    text-align:center;
+
+
+    border-radius:20px;
+
+
+    box-shadow:
+
+    0 10px 25px rgba(0,0,0,.10);
+
+
+    font-weight:bold;
+
+
+}
+
+
+
+
+
+.jasa-grid b{
+
+
+    display:block;
+
+
+    margin-top:12px;
+
+
+    color:#059669;
+
+
+    font-size:20px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/* ============================
+   ANIMASI
+============================ */
+
+
+.stat-card,
+.sektor-card,
+.sejahtera-grid div,
+.jasa-grid div{
+
+
+    animation:
+
+    ekonomiFade .8s ease forwards;
+
+
+}
+
+
+
+@keyframes ekonomiFade{
+
+
+from{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+}
+
+
+to{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ============================
+   RESPONSIVE HP
+============================ */
+
+
+@media(max-width:768px){
+
+
+.ekonomi-opening{
+
+    padding:60px 20px;
+
+}
+
+
+
+.ekonomi-opening h1{
+
+    font-size:34px;
+
+}
+
+
+
+.judul-section{
+
+    font-size:26px;
+
+}
+
+
+
+.stat-card h2,
+.sektor-card h2{
+
+    font-size:30px;
+
+}
+
+
+
+}
+
+/* =====================================================
+   SARANA DAN PRASARANA DESA
+===================================================== */
+
+
+/* ============================
+   OPENING SARANA
+============================ */
+
+
+.sarana-opening{
+
+    padding:90px 20px;
+
+    text-align:center;
+
+    background:
+    linear-gradient(
+        135deg,
+        #0f766e,
+        #2563eb
+    );
+
+    color:white;
+
+}
+
+
+
+.sarana-opening span{
+
+    font-size:16px;
+
+    letter-spacing:2px;
+
+    font-weight:bold;
+
+    opacity:.9;
+
+}
+
+
+
+
+.sarana-opening h1{
+
+    font-size:48px;
+
+    margin:15px 0;
+
+}
+
+
+
+.sarana-opening p{
+
+    max-width:850px;
+
+    margin:auto;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+
+
+
+
+
+
+
+
+/* ============================
+   STATISTIK SARANA
+============================ */
+
+
+.sarana-stat{
+
+    padding:80px 0;
+
+    background:#f8fafc;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* ============================
+   FASILITAS DESA
+============================ */
+
+
+.fasilitas-desa{
+
+    padding:90px 0;
+
+    background:
+    linear-gradient(
+        180deg,
+        #ffffff,
+        #eff6ff
+    );
+
+}
+
+
+
+
+
+.fasilitas-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(300px,1fr));
+
+    gap:30px;
+
+}
+
+
+
+
+
+
+
+.fasilitas-card{
+
+    background:white;
+
+    padding:35px 30px;
+
+    border-radius:28px;
+
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.12);
+
+
+    transition:.35s;
+
+
+}
+
+
+
+
+
+.fasilitas-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+
+
+
+
+
+.fasilitas-icon{
+
+
+    width:85px;
+
+    height:85px;
+
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+
+    margin:0 auto 20px;
+
+
+    font-size:45px;
+
+
+    background:#dbeafe;
+
+
+    border-radius:50%;
+
+
+}
+
+
+
+
+
+
+
+
+
+.fasilitas-card h3{
+
+
+    text-align:center;
+
+
+    font-size:24px;
+
+
+    color:#075985;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+
+
+
+.fasilitas-card ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+}
+
+
+
+
+
+.fasilitas-card li{
+
+
+    padding:10px 0;
+
+
+    border-bottom:
+
+    1px solid #e5e7eb;
+
+
+    color:#374151;
+
+
+    font-weight:500;
+
+
+}
+
+
+
+
+
+
+.fasilitas-card li::before{
+
+
+    content:"✓";
+
+
+    color:#059669;
+
+
+    font-weight:bold;
+
+
+    margin-right:10px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================
+   INFRASTRUKTUR
+============================ */
+
+
+.infrastruktur{
+
+
+    padding:90px 0;
+
+
+    background:#f0fdfa;
+
+
+}
+
+
+
+
+
+
+
+.infrastruktur .stat-card h2{
+
+
+    color:#0f766e;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ============================
+   AIR BERSIH
+============================ */
+
+
+
+.air-bersih{
+
+    padding:90px 0;
+
+    background:white;
+
+}
+
+
+
+
+
+
+
+
+
+/* ============================
+   VIDEO WISATA SARANA
+============================ */
+
+
+.sarana-wisata{
+
+    padding:90px 0;
+
+    background:#f8fafc;
+
+}
+
+
+
+
+.wisata-video-card{
+
+
+    position:relative;
+
+
+    overflow:hidden;
+
+
+    border-radius:35px;
+
+
+    min-height:500px;
+
+
+    box-shadow:
+    0 25px 60px rgba(0,0,0,.25);
+
+
+}
+
+
+
+
+
+
+
+.video-box{
+
+    position:absolute;
+
+    inset:0;
+
+}
+
+
+
+
+.video-box video{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+
+
+
+
+.video-overlay{
+
+
+    position:absolute;
+
+    inset:0;
+
+
+    background:
+
+    linear-gradient(
+        90deg,
+        rgba(0,0,0,.75),
+        rgba(0,0,0,.15)
+    );
+
+
+}
+
+
+
+
+
+
+
+.wisata-info{
+
+
+    position:relative;
+
+
+    z-index:2;
+
+
+    max-width:600px;
+
+
+    padding:80px;
+
+
+    color:white;
+
+
+}
+
+
+
+
+
+
+.wisata-info span{
+
+
+    letter-spacing:3px;
+
+
+    font-weight:bold;
+
+
+    color:#86efac;
+
+
+}
+
+
+
+
+
+
+
+.wisata-info h2{
+
+
+    font-size:45px;
+
+
+    margin:20px 0;
+
+
+}
+
+
+
+
+
+
+.wisata-info p{
+
+
+    font-size:18px;
+
+
+    line-height:1.8;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width:768px){
+
+
+.wisata-video-card{
+
+
+    min-height:550px;
+
+
+}
+
+
+
+.wisata-info{
+
+
+    padding:45px 30px;
+
+
+}
+
+
+
+.wisata-info h2{
+
+
+    font-size:32px;
+
+
+}
+
+
+}
+
+/* ============================
+   ANIMASI SARANA
+============================ */
+
+
+.fasilitas-card{
+
+
+    animation:
+
+    saranaMuncul .8s ease forwards;
+
+
+}
+
+
+
+
+@keyframes saranaMuncul{
+
+
+from{
+
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+
+}
+
+
+
+to{
+
+
+    opacity:1;
+
+    transform:translateY(0);
+
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/* ============================
+   RESPONSIVE SARANA
+============================ */
+
+
+@media(max-width:768px){
+
+
+
+.sarana-opening{
+
+    padding:60px 20px;
+
+}
+
+
+
+.sarana-opening h1{
+
+
+    font-size:34px;
+
+
+}
+
+
+
+.fasilitas-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+
+.fasilitas-card{
+
+
+    padding:30px 25px;
+
+
+}
+
+
+
+
+.wisata-box{
+
+
+    padding:35px 25px;
+
+
+}
+
+
+
+.wisata-box h2{
+
+
+    font-size:28px;
+
+
+}
+
+
+
+}
+
+
+
+/* ============================
+   RESPONSIVE
+============================ */
+
+
+@media(max-width:768px){
+
+
+
+.ekonomi-opening{
+
+    padding:60px 20px;
+
+}
+
+
+
+.ekonomi-opening h1{
+
+    font-size:34px;
+
+}
+
+
+
+
+.ekonomi-section h2,
+.sektor-ekonomi h2,
+.pendapatan h2{
+
+    font-size:26px;
+
+}
+
+
+
+
+.sektor-card img{
+
+    height:180px;
+
+}
+
+
+
+}
+
+
+
+
+
+/* ============================
+   RESPONSIVE
+============================ */
+
+
+
+@media(max-width:850px){
+
+
+
+.opening-grid,
+.cerita-grid{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+.cerita-grid.reverse img{
+
+
+    order:0;
+
+
+}
+
+
+
+.nilai-grid,
+.galeri-grid{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+.opening-text h1{
+
+
+    font-size:34px;
+
+
+}
+
+
+
+.quote-desa h2{
+
+
+    font-size:25px;
+
+
+}
+
+
+
+.opening-img img,
+.cerita-grid img{
+
+
+    height:260px;
+
+
+}
+
+
+
+}
+
+/* =====================================================
+   BAB VIII - POTENSI DESA BINA BHAKTI
+===================================================== */
+
+
+/* HERO */
+
+.potensi-hero{
+
+    padding:100px 20px;
+
+    min-height:70vh;
+
+    display:flex;
+
+    align-items:center;
+
+    text-align:center;
+
+    color:white;
+
+    background:
+    linear-gradient(
+        135deg,
+        #064e3b,
+        #16a34a
+    );
+
+}
+
+
+.potensi-hero h1{
+
+    font-size:50px;
+
+    margin:20px 0;
+
+}
+
+
+.potensi-hero span{
+
+    font-weight:bold;
+
+    letter-spacing:3px;
+
+}
+
+
+.potensi-hero p{
+
+    max-width:850px;
+
+    margin:auto;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+
+
+
+
+
+/* INTRO */
+
+
+.potensi-intro{
+
+    padding:80px 20px;
+
+    background:white;
+
+}
+
+
+
+.potensi-title{
+
+    max-width:850px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+
+
+.potensi-title h2{
+
+    font-size:40px;
+
+    color:#064e3b;
+
+}
+
+
+
+.potensi-title p{
+
+    margin-top:20px;
+
+    color:#555;
+
+    line-height:1.8;
+
+}
+
+
+
+
+
+
+
+
+/* GRID */
+
+
+.potensi-section{
+
+    padding:90px 20px;
+
+    background:#f8fafc;
+
+}
+
+
+
+.potensi-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(300px,1fr));
+
+    gap:30px;
+
+}
+
+
+
+
+
+
+
+
+
+/* CARD */
+
+
+.potensi-card{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:25px;
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.12);
+
+    transition:.3s;
+
+}
+
+
+
+.potensi-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+.potensi-card i{
+
+    width:75px;
+
+    height:75px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    font-size:35px;
+
+    background:#dcfce7;
+
+    color:#15803d;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.potensi-card h3{
+
+    font-size:24px;
+
+    color:#064e3b;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.potensi-card p{
+
+    line-height:1.8;
+
+    color:#555;
+
+}
+
+
+
+
+
+
+
+
+
+/* DATA MINI */
+
+
+.potensi-data-mini{
+
+    margin-top:25px;
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+
+
+.potensi-data-mini span{
+
+    flex:1;
+
+    padding:15px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    background:#16a34a;
+
+    color:white;
+
+    font-weight:bold;
+
+}
+
+
+
+
+
+
+
+
+
+/* VIDEO WISATA */
+
+
+.potensi-wisata{
+
+    padding:100px 20px;
+
+    text-align:center;
+
+    background:#ecfdf5;
+
+}
+
+
+
+.potensi-wisata h2{
+
+    font-size:40px;
+
+    color:#064e3b;
+
+}
+
+
+
+.potensi-wisata p{
+
+    max-width:700px;
+
+    margin:
+
+    20px auto 40px;
+
+    color:#555;
+
+}
+
+
+
+.potensi-wisata video{
+
+    width:100%;
+
+    max-width:1000px;
+
+    height:520px;
+
+    object-fit:cover;
+
+    border-radius:30px;
+
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,.25);
+
+}
+
+
+
+
+
+
+
+
+
+/* PENUTUP */
+
+
+.potensi-closing{
+
+    padding:100px 20px;
+
+    text-align:center;
+
+    color:white;
+
+    background:
+    linear-gradient(
+        135deg,
+        #064e3b,
+        #14532d
+    );
+
+}
+
+
+
+.potensi-closing h2{
+
+    font-size:42px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.potensi-closing p{
+
+    max-width:800px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* ANIMASI */
+
+
+.potensi-card{
+
+    animation:
+
+    potensiFade .8s ease;
+
+}
+
+
+
+@keyframes potensiFade{
+
+
+from{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+}
+
+
+to{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+/* MOBILE */
+
+
+@media(max-width:768px){
+
+
+.potensi-hero{
+
+    padding:70px 20px;
+
+}
+
+
+.potensi-hero h1{
+
+    font-size:34px;
+
+}
+
+
+.potensi-title h2{
+
+    font-size:30px;
+
+}
+
+
+.potensi-card{
+
+    padding:28px;
+
+}
+
+
+.potensi-wisata video{
+
+    height:280px;
+
+}
+
+
+.potensi-closing h2{
+
+    font-size:30px;
+
+}
+
+
+}
+
+/* =====================================================
+   BAB IX - CAPAIAN PEMBANGUNAN DESA 2025
+===================================================== */
+
+
+/* ==========================
+   HERO
+========================== */
+
+.pembangunan-hero{
+
+    min-height:70vh;
+
+    padding:100px 20px;
+
+    display:flex;
+
+    align-items:center;
+
+    text-align:center;
+
+    color:white;
+
+    background:
+    linear-gradient(
+        135deg,
+        rgba(15,23,42,.95),
+        rgba(30,64,175,.9)
+    );
+
+}
+
+
+.pembangunan-hero span{
+
+    font-weight:bold;
+
+    letter-spacing:4px;
+
+    color:#facc15;
+
+}
+
+
+.pembangunan-hero h1{
+
+    font-size:55px;
+
+    margin:20px 0;
+
+}
+
+
+.pembangunan-hero p{
+
+    max-width:850px;
+
+    margin:auto;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+
+
+
+
+
+
+/* ==========================
+   INTRO
+========================== */
+
+
+.pembangunan-intro{
+
+    padding:90px 20px;
+
+    text-align:center;
+
+    background:white;
+
+}
+
+
+.pembangunan-intro h2{
+
+    font-size:42px;
+
+    color:#1e3a8a;
+
+}
+
+
+.pembangunan-intro p{
+
+    max-width:850px;
+
+    margin:20px auto 0;
+
+    line-height:1.8;
+
+    color:#555;
+
+}
+
+
+
+
+
+
+
+
+/* ==========================
+   STAT CAPAIAN
+========================== */
+
+
+.pembangunan-stat{
+
+    padding:90px 20px;
+
+    background:#f8fafc;
+
+}
+
+
+
+.pembangunan-stat-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(230px,1fr));
+
+    gap:30px;
+
+}
+
+
+
+.pembangunan-stat-card{
+
+    background:white;
+
+    padding:40px 25px;
+
+    text-align:center;
+
+    border-radius:30px;
+
+    box-shadow:
+    0 20px 45px rgba(0,0,0,.12);
+
+    transition:.4s;
+
+}
+
+
+
+.pembangunan-stat-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
+
+
+.pembangunan-stat-card i{
+
+    width:80px;
+
+    height:80px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:#dbeafe;
+
+    color:#2563eb;
+
+    font-size:38px;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.pembangunan-stat-card h3{
+
+    font-size:42px;
+
+    color:#1e3a8a;
+
+}
+
+
+
+.pembangunan-stat-card p{
+
+    margin-top:10px;
+
+    color:#555;
+
+    font-weight:600;
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================
+   CARD CAPAIAN
+========================== */
+
+
+.pembangunan-section{
+
+    padding:100px 20px;
+
+    background:
+    linear-gradient(
+        180deg,
+        #eff6ff,
+        #ffffff
+    );
+
+}
+
+
+
+.pembangunan-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(310px,1fr));
+
+    gap:30px;
+
+}
+
+
+
+
+
+
+.pembangunan-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:white;
+
+    padding:38px;
+
+    border-radius:28px;
+
+    box-shadow:
+    0 20px 45px rgba(0,0,0,.12);
+
+    transition:.4s;
+
+}
+
+
+
+.pembangunan-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
+
+
+.pembangunan-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:7px;
+
+    background:
+    linear-gradient(
+        90deg,
+        #2563eb,
+        #facc15
+    );
+
+}
+
+
+
+
+
+
+
+.pembangunan-card i{
+
+    width:75px;
+
+    height:75px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:22px;
+
+    background:#dbeafe;
+
+    color:#2563eb;
+
+    font-size:35px;
+
+    margin-bottom:25px;
+
+}
+
+
+
+
+.pembangunan-card h3{
+
+    color:#1e3a8a;
+
+    font-size:25px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+
+
+
+
+.pembangunan-card ul{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+
+
+.pembangunan-card li{
+
+    padding:12px 0;
+
+    color:#555;
+
+    line-height:1.5;
+
+    border-bottom:
+
+    1px solid #eee;
+
+}
+
+
+
+.pembangunan-card li::before{
+
+    content:"✓";
+
+    margin-right:10px;
+
+    color:#16a34a;
+
+    font-weight:bold;
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================
+   CLOSING
+========================== */
+
+
+.pembangunan-closing{
+
+    padding:110px 20px;
+
+    text-align:center;
+
+    color:white;
+
+
+    background:
+    linear-gradient(
+        135deg,
+        #1e3a8a,
+        #0f172a
+    );
+
+}
+
+
+
+.pembangunan-closing h2{
+
+    font-size:48px;
+
+    margin-bottom:20px;
+
+    color:#facc15;
+
+}
+
+
+
+.pembangunan-closing p{
+
+    max-width:850px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+    font-size:18px;
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================
+   ANIMASI
+========================== */
+
+
+.pembangunan-card,
+.pembangunan-stat-card{
+
+    animation:
+    capaianUp .8s ease;
+
+}
+
+
+
+@keyframes capaianUp{
+
+
+from{
+
+    opacity:0;
+
+    transform:translateY(50px);
+
+}
+
+
+to{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+
+@media(max-width:768px){
+
+
+.pembangunan-hero{
+
+    min-height:auto;
+
+    padding:70px 20px;
+
+}
+
+
+
+.pembangunan-hero h1{
+
+    font-size:35px;
+
+}
+
+
+
+.pembangunan-intro h2{
+
+    font-size:30px;
+
+}
+
+
+
+.pembangunan-stat-card h3{
+
+    font-size:34px;
+
+}
+
+
+
+.pembangunan-card{
+
+    padding:30px;
+
+}
+
+
+
+.pembangunan-closing h2{
+
+    font-size:32px;
+
+}
+
+
+}
+
+/* =====================================================
+   BAB X - STATISTIK DESA CANTIK
+===================================================== */
+
+
+
+/* ===============================
+   HERO STATISTIK
+================================ */
+
+
+.statistik-hero{
+
+    min-height:70vh;
+
+    padding:100px 20px;
+
+    display:flex;
+
+    align-items:center;
+
+    text-align:center;
+
+    color:white;
+
+
+    background:
+    linear-gradient(
+        135deg,
+        #020617,
+        #1d4ed8
+    );
+
+}
+
+
+
+.statistik-hero span{
+
+    color:#38bdf8;
+
+    font-weight:bold;
+
+    letter-spacing:4px;
+
+}
+
+
+
+.statistik-hero h1{
+
+    font-size:55px;
+
+    margin:20px 0;
+
+}
+
+
+
+.statistik-hero p{
+
+    max-width:850px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+    font-size:18px;
+
+}
+
+
+
+
+
+
+
+
+
+/* ===============================
+   COUNTER DASHBOARD
+================================ */
+
+
+.statistik-counter{
+
+    padding:90px 20px;
+
+
+    background:
+
+    linear-gradient(
+        180deg,
+        #eff6ff,
+        white
+    );
+
+}
+
+
+
+.statistik-counter-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(230px,1fr));
+
+    gap:30px;
+
+}
+
+
+
+
+
+
+.statistik-box{
+
+    background:white;
+
+    padding:40px 25px;
+
+    text-align:center;
+
+    border-radius:30px;
+
+
+    box-shadow:
+    0 20px 45px rgba(0,0,0,.12);
+
+
+    transition:.4s;
+
+}
+
+
+
+.statistik-box:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
+
+.statistik-box i{
+
+    font-size:45px;
+
+    color:#2563eb;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.statistik-box h2{
+
+    font-size:45px;
+
+    color:#0f172a;
+
+}
+
+
+
+.statistik-box p{
+
+    color:#555;
+
+    font-weight:600;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* ===============================
+   AREA GRAFIK
+================================ */
+
+
+.statistik-chart{
+
+    padding:100px 20px;
+
+    background:#f8fafc;
+
+}
+
+
+
+.statistik-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(420px,1fr));
+
+    gap:35px;
+
+}
+
+
+
+
+
+
+
+
+
+/* ===============================
+   CARD GRAFIK
+================================ */
+
+
+
+.statistik-card{
+
+    background:
+
+    rgba(255,255,255,.95);
+
+
+    backdrop-filter:blur(10px);
+
+
+    padding:35px;
+
+
+    border-radius:30px;
+
+
+    box-shadow:
+    0 25px 55px rgba(0,0,0,.12);
+
+
+    transition:.4s;
+
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+
+
+.statistik-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
+
+
+.statistik-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:6px;
+
+
+    background:
+
+    linear-gradient(
+        90deg,
+        #2563eb,
+        #22d3ee
+    );
+
+}
+
+
+
+
+
+
+
+
+.statistik-card h3{
+
+    color:#0f172a;
+
+    font-size:23px;
+
+    margin-bottom:25px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+
+
+
+.statistik-card h3 i{
+
+    color:#2563eb;
+
+}
+
+
+
+
+
+
+
+
+/* CANVAS CHART */
+
+
+.statistik-card canvas{
+
+    width:100% !important;
+
+
+    height:330px !important;
+
+}
+
+
+
+
+
+
+
+
+
+/* ===============================
+   CLOSING
+================================ */
+
+
+.statistik-closing{
+
+
+    padding:110px 20px;
+
+
+    text-align:center;
+
+
+    color:white;
+
+
+    background:
+
+    linear-gradient(
+
+        135deg,
+
+        #0f172a,
+
+        #1e40af
+
+    );
+
+}
+
+
+
+
+.statistik-closing h2{
+
+    font-size:48px;
+
+    margin-bottom:20px;
+
+    color:#38bdf8;
+
+}
+
+
+
+
+.statistik-closing p{
+
+    max-width:850px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+    font-size:18px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ===============================
+   ANIMASI DASHBOARD
+================================ */
+
+
+.statistik-box,
+.statistik-card{
+
+
+    animation:
+
+    statistikShow .8s ease;
+
+
+}
+
+
+
+
+@keyframes statistikShow{
+
+
+from{
+
+
+    opacity:0;
+
+
+    transform:translateY(50px);
+
+
+}
+
+
+
+to{
+
+
+    opacity:1;
+
+
+    transform:translateY(0);
+
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+
+@media(max-width:768px){
+
+
+
+.statistik-hero{
+
+    min-height:auto;
+
+    padding:70px 20px;
+
+}
+
+
+
+.statistik-hero h1{
+
+    font-size:35px;
+
+}
+
+
+
+.statistik-grid{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+.statistik-card{
+
+
+    padding:25px;
+
+
+}
+
+
+
+
+.statistik-card canvas{
+
+
+    height:260px !important;
+
+
+}
+
+
+
+
+.statistik-box h2{
+
+    font-size:35px;
+
+}
+
+
+
+.statistik-closing h2{
+
+    font-size:32px;
+
+}
+
+
+}
+
+/* =====================================================
+   BAB XI - PRESTASI DESA BINA BHAKTI
+===================================================== */
+
+
+
+/* ==========================
+   HERO PRESTASI
+========================== */
+
+
+.prestasi-hero{
+
+    min-height:70vh;
+
+    padding:100px 20px;
+
+    display:flex;
+
+    align-items:center;
+
+    text-align:center;
+
+    color:white;
+
+
+    background:
+    linear-gradient(
+        135deg,
+        #422006,
+        #b45309
+    );
+
+}
+
+
+
+.prestasi-hero span{
+
+    color:#fde68a;
+
+    letter-spacing:4px;
+
+    font-weight:bold;
+
+}
+
+
+
+.prestasi-hero h1{
+
+    font-size:55px;
+
+    margin:20px 0;
+
+}
+
+
+
+.prestasi-hero p{
+
+    max-width:850px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+    font-size:18px;
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================
+   HIGHLIGHT AWARD
+========================== */
+
+
+.prestasi-highlight{
+
+    padding:100px 20px;
+
+    background:#fffbeb;
+
+}
+
+
+
+.prestasi-highlight h2{
+
+    text-align:center;
+
+    font-size:45px;
+
+    margin-bottom:70px;
+
+    color:#92400e;
+
+}
+
+
+
+
+
+
+
+
+/* FOTO + TEXT */
+
+
+.prestasi-feature{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:50px;
+
+    align-items:center;
+
+
+    margin-bottom:90px;
+
+}
+
+
+
+.prestasi-feature.reverse .prestasi-img{
+
+    order:2;
+
+}
+
+
+
+
+
+
+
+
+.prestasi-img img{
+
+
+    width:100%;
+
+    height:420px;
+
+    object-fit:cover;
+
+
+    border-radius:35px;
+
+
+    box-shadow:
+    0 25px 60px rgba(0,0,0,.25);
+
+
+}
+
+
+
+
+
+
+
+
+
+.prestasi-text span{
+
+
+    display:inline-block;
+
+
+    padding:12px 25px;
+
+
+    border-radius:50px;
+
+
+    background:#facc15;
+
+
+    color:#713f12;
+
+
+    font-weight:bold;
+
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+
+
+
+
+
+.prestasi-text h3{
+
+
+    font-size:40px;
+
+
+    color:#78350f;
+
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+
+
+
+
+.prestasi-text p{
+
+
+    line-height:1.8;
+
+
+    color:#555;
+
+
+    font-size:18px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================
+   CAPAIAN LAIN
+========================== */
+
+
+
+.prestasi-section{
+
+    padding:100px 20px;
+
+
+    background:#f8fafc;
+
+}
+
+
+
+
+.prestasi-section h2{
+
+
+    text-align:center;
+
+
+    font-size:42px;
+
+
+    margin-bottom:60px;
+
+
+    color:#78350f;
+
+}
+
+
+
+
+
+.prestasi-grid{
+
+
+    display:grid;
+
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+
+    gap:30px;
+
+
+}
+
+
+
+
+
+
+
+
+/* CARD */
+
+
+.prestasi-card{
+
+
+    background:white;
+
+
+    padding:40px 35px;
+
+
+    border-radius:30px;
+
+
+    text-align:center;
+
+
+
+    box-shadow:
+    0 20px 45px rgba(0,0,0,.12);
+
+
+
+    transition:.4s;
+
+
+
+    position:relative;
+
+    overflow:hidden;
+
+
+}
+
+
+
+
+
+
+
+.prestasi-card:hover{
+
+
+    transform:translateY(-10px);
+
+
+}
+
+
+
+
+
+
+
+
+.prestasi-card::before{
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    top:0;
+
+    left:0;
+
+
+    width:100%;
+
+    height:6px;
+
+
+
+    background:
+
+    linear-gradient(
+
+        90deg,
+
+        #facc15,
+
+        #b45309
+
+    );
+
+
+}
+
+
+
+
+
+
+
+
+.prestasi-card i{
+
+
+    width:80px;
+
+    height:80px;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    margin:auto;
+
+
+    border-radius:50%;
+
+
+    background:#fef3c7;
+
+
+    color:#b45309;
+
+
+    font-size:38px;
+
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+
+
+
+
+
+.prestasi-card h3{
+
+
+    font-size:24px;
+
+
+    color:#78350f;
+
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+
+
+
+
+
+.prestasi-card p{
+
+
+    line-height:1.7;
+
+
+    color:#555;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================
+   CLOSING
+========================== */
+
+
+.prestasi-closing{
+
+
+    padding:110px 20px;
+
+
+    text-align:center;
+
+
+    color:white;
+
+
+    background:
+
+    linear-gradient(
+
+        135deg,
+
+        #78350f,
+
+        #111827
+
+    );
+
+
+}
+
+
+
+
+
+
+
+.prestasi-closing h2{
+
+
+    font-size:48px;
+
+
+    margin-bottom:20px;
+
+
+    color:#fde68a;
+
+
+}
+
+
+
+
+
+
+
+.prestasi-closing p{
+
+
+    max-width:850px;
+
+
+    margin:auto;
+
+
+    line-height:1.8;
+
+
+    font-size:18px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/* ==========================
+   ANIMASI
+========================== */
+
+
+.prestasi-card,
+.prestasi-feature{
+
+
+    animation:
+
+    awardShow .9s ease;
+
+
+}
+
+
+
+
+@keyframes awardShow{
+
+
+from{
+
+
+    opacity:0;
+
+
+    transform:translateY(60px);
+
+
+}
+
+
+
+to{
+
+
+    opacity:1;
+
+
+    transform:translateY(0);
+
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+
+
+@media(max-width:768px){
+
+
+
+.prestasi-hero{
+
+
+    min-height:auto;
+
+    padding:70px 20px;
+
+
+}
+
+
+
+.prestasi-hero h1{
+
+
+    font-size:35px;
+
+
+}
+
+
+
+
+
+.prestasi-feature{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+.prestasi-feature.reverse .prestasi-img{
+
+
+    order:0;
+
+
+}
+
+
+
+
+.prestasi-img img{
+
+
+    height:280px;
+
+
+}
+
+
+
+
+
+.prestasi-text h3{
+
+
+    font-size:30px;
+
+
+}
+
+
+
+
+.prestasi-highlight h2,
+.prestasi-section h2{
+
+
+    font-size:32px;
+
+
+}
+
+
+
+
+.prestasi-closing h2{
+
+
+    font-size:32px;
+
+
+}
+
+
+
+}
+
+/* =====================================================
+   BAB XII - PENUTUP DESA BINA BHAKTI
+===================================================== */
+
+
+
+/* ==========================
+   HERO PENUTUP
+========================== */
+
+
+.penutup-hero{
+
+    min-height:70vh;
+
+    padding:100px 20px;
+
+    display:flex;
+
+    align-items:center;
+
+    text-align:center;
+
+    color:white;
+
+
+    background:
+    radial-gradient(
+        circle at top,
+        #166534,
+        #052e16,
+        #020617
+    );
+
+}
+
+
+
+.penutup-hero span{
+
+    color:#fde68a;
+
+    font-weight:bold;
+
+    letter-spacing:4px;
+
+}
+
+
+
+.penutup-hero h1{
+
+    font-size:60px;
+
+    margin:20px 0;
+
+}
+
+
+
+.penutup-hero p{
+
+    max-width:850px;
+
+    margin:auto;
+
+    font-size:19px;
+
+    line-height:1.8;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================
+   PERJALANAN
+========================== */
+
+
+.penutup-journey{
+
+    padding:100px 20px;
+
+    background:#f8fafc;
+
+}
+
+
+
+.penutup-journey h2{
+
+    text-align:center;
+
+    font-size:45px;
+
+    color:#14532d;
+
+    margin-bottom:70px;
+
+}
+
+
+
+
+
+
+
+
+
+/* TIMELINE */
+
+
+.penutup-timeline{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+}
+
+
+
+
+
+
+
+
+.penutup-item{
+
+
+    background:white;
+
+
+    padding:40px 30px;
+
+
+    text-align:center;
+
+
+    border-radius:30px;
+
+
+    box-shadow:
+    0 20px 45px rgba(0,0,0,.12);
+
+
+    transition:.4s;
+
+
+    position:relative;
+
+
+    overflow:hidden;
+
+
+}
+
+
+
+
+
+
+
+
+.penutup-item:hover{
+
+
+    transform:translateY(-10px);
+
+
+}
+
+
+
+
+
+
+
+
+
+.penutup-item::before{
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    top:0;
+
+
+    left:0;
+
+
+    width:100%;
+
+
+    height:6px;
+
+
+
+    background:
+
+    linear-gradient(
+        90deg,
+        #16a34a,
+        #facc15
+    );
+
+
+}
+
+
+
+
+
+
+
+
+
+.penutup-item i{
+
+
+    width:85px;
+
+    height:85px;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+    justify-content:center;
+
+
+    margin:auto;
+
+
+    border-radius:50%;
+
+
+    background:#dcfce7;
+
+
+    color:#15803d;
+
+
+    font-size:40px;
+
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+
+
+
+
+
+.penutup-item h3{
+
+
+    font-size:28px;
+
+
+    color:#14532d;
+
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+
+
+
+
+.penutup-item p{
+
+
+    color:#555;
+
+
+    line-height:1.8;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================
+   PESAN AKHIR
+========================== */
+
+
+.penutup-message{
+
+
+    padding:120px 20px;
+
+
+    text-align:center;
+
+
+    color:white;
+
+
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #052e16,
+        #111827
+    );
+
+
+}
+
+
+
+
+
+
+
+
+.penutup-message i{
+
+
+    font-size:55px;
+
+
+    color:#facc15;
+
+
+    margin-bottom:35px;
+
+
+}
+
+
+
+
+
+
+
+
+
+.penutup-message h2{
+
+
+    font-size:42px;
+
+
+    line-height:1.5;
+
+
+    margin-bottom:30px;
+
+
+}
+
+
+
+
+
+
+
+
+.penutup-message p{
+
+
+    max-width:800px;
+
+
+    margin:auto;
+
+
+    line-height:1.8;
+
+
+    font-size:18px;
+
+
+    color:#e5e7eb;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+.penutup-message h1{
+
+
+    margin-top:60px;
+
+
+    font-size:55px;
+
+
+    letter-spacing:5px;
+
+
+    color:#fde68a;
+
+
+}
+
+
+
+
+
+
+
+
+
+.penutup-message span{
+
+
+    display:block;
+
+
+    margin-top:20px;
+
+
+    font-size:20px;
+
+
+    letter-spacing:2px;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================
+   ANIMASI
+========================== */
+
+
+.penutup-item{
+
+
+    animation:
+    penutupNaik .9s ease;
+
+
+}
+
+
+
+@keyframes penutupNaik{
+
+
+from{
+
+
+    opacity:0;
+
+
+    transform:translateY(50px);
+
+
+}
+
+
+
+to{
+
+
+    opacity:1;
+
+
+    transform:translateY(0);
+
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================
+   MOBILE
+========================== */
+
+
+@media(max-width:768px){
+
+
+
+.penutup-hero{
+
+
+    min-height:auto;
+
+
+    padding:70px 20px;
+
+
+}
+
+
+
+
+.penutup-hero h1{
+
+
+    font-size:40px;
+
+
+}
+
+
+
+
+.penutup-journey h2{
+
+
+    font-size:32px;
+
+
+}
+
+
+
+
+.penutup-message h2{
+
+
+    font-size:28px;
+
+
+}
+
+
+
+.penutup-message h1{
+
+
+    font-size:34px;
+
+
+    letter-spacing:2px;
+
+
+}
+
+
+
+
+.penutup-message{
+
+
+    padding:80px 20px;
+
+
+}
+
+
+
+}
+
+/* ==========================================================
+   NAVIGATION
+========================================================== */
+
+.page-navigation{
+
+    padding:50px 0;
+
+}
+
+.page-navigation .container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+}
+
+.nav-button{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    background:var(--primary);
+
+    color:#FFFFFF;
+
+    padding:14px 28px;
+
+    border-radius:50px;
+
+    transition:var(--transition);
+
+}
+
+.nav-button:hover{
+
+    background:var(--dark);
+
+    transform:translateY(-3px);
+
+}
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+.footer{
+
+    background:var(--dark);
+
+    color:#FFFFFF;
+
+    text-align:center;
+
+    padding:22px;
+
+}
+
+.footer h3{
+
+    color:#FFFFFF;
+
+    margin-bottom:5px;
+
+}
+
+.footer p{
+
+    color:#D9E7D9;
+
+    margin-bottom:10px;
+
+}
+
+.footer-line{
+
+    width:70px;
+
+    height:2px;
+
+    background:#7BC043;
+
+    margin:10px auto;
+
+}
+
+.footer small{
+
+    color:#D9E7D9;
+
+}
+
+.footer strong{
+
+    color:#FFFFFF;
+
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:768px){
+
+.page-header .container{
+
+flex-direction:column;
+
+gap:15px;
+
+padding:18px 0;
+
+}
+
+.logo{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.banner-content h1{
+
+font-size:36px;
+
+}
+
+.banner-content p{
+
+font-size:18px;
+
+}
+
+.page-banner{
+
+height:300px;
+
+}
+
+.page-content{
+
+padding:50px 0;
+
+}
+
+.page-content h2{
+
+font-size:28px;
+
+}
+
+.page-navigation .container{
+
+flex-direction:column;
+
+gap:15px;
+
+}
+
+.nav-button{
+
+justify-content:center;
+
+}
+
+}
