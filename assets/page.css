@@ -7603,71 +7603,63 @@ to{
 
 }
 
-/* ==========================================================
-   RESPONSIVE
-========================================================== */
+/* ==========================
+   FIX HEADER MOBILE PAGE
+========================== */
 
 @media(max-width:768px){
 
 .page-header .container{
 
-flex-direction:column;
-
-gap:15px;
-
-padding:18px 0;
+    flex-direction:row;
+    padding:8px 0;
+    gap:10px;
 
 }
+
 
 .logo{
 
-flex-direction:column;
-
-text-align:center;
-
-}
-
-.banner-content h1{
-
-font-size:36px;
+    flex-direction:row;
+    text-align:left;
+    gap:8px;
 
 }
 
-.banner-content p{
 
-font-size:18px;
+.logo img{
 
-}
-
-.page-banner{
-
-height:300px;
+    width:42px;
 
 }
 
-.page-content{
 
-padding:50px 0;
+.logo h2{
 
-}
-
-.page-content h2{
-
-font-size:28px;
+    font-size:15px;
+    line-height:1;
 
 }
 
-.page-navigation .container{
 
-flex-direction:column;
+.logo span{
 
-gap:15px;
+    font-size:11px;
 
 }
 
-.nav-button{
 
-justify-content:center;
+.back-home{
+
+    padding:8px 14px;
+    font-size:12px;
+
+}
+
+
+.page-header{
+
+    min-height:60px;
 
 }
 
